@@ -169,7 +169,7 @@ export default function GiftRegistryPage() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
                     <Image
-                      src="/placeholder.svg?height=300&width=400&text=Mauritius+Beach+Paradise"
+                      src="https://blog.pentravel.co.za/wp-content/uploads/2022/06/NORTH.jpg"
                       alt="Beautiful Mauritius beach destination"
                       width={400}
                       height={300}

@@ -34,7 +34,7 @@ export default function AccommodationPage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-64 md:h-auto">
                   <Image
-                    src="/placeholder.svg?height=300&width=400&text=Luxury+Hotel+Pretoria"
+                    src="https://img.easemytrip.com/EMTHotel-49952/72/a/l/1129104/114077995_P.jpg"
                     alt="Sheraton Pretoria Hotel"
                     fill
                     className="object-cover"
@@ -102,7 +102,7 @@ export default function AccommodationPage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-64 md:h-auto">
                   <Image
-                    src="/placeholder.svg?height=300&width=400&text=Boutique+Hotel+Pretoria"
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/cf/1b/fb/caption.jpg?w=900&h=-1&s=1"
                     alt="Menlyn Boutique Hotel"
                     fill
                     className="object-cover"
@@ -171,7 +171,7 @@ export default function AccommodationPage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-64 md:h-auto">
                   <Image
-                    src="/placeholder.svg?height=300&width=400&text=Garden+Hotel+Pretoria"
+                    src="https://www.hotelscombined.com/himg/7d/7d/b8/expediav2-159613-d0c63d-932414.jpg"
                     alt="Pretoria Garden Hotel"
                     fill
                     className="object-cover"

@@ -160,12 +160,12 @@ export default function DressCodePage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="bg-white shadow-md border-amber-200 overflow-hidden">
-                <div className="relative h-48">
+                <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Elegant+Ceremony+Dress"
-                    alt="Elegant ceremony dress inspiration"
+                    src="/Ceremony Elegance Modest and sophisticated.png"
+                    alt="Elegant ceremony dress - modest and sophisticated attire for church wedding"
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
                   />
                 </div>
                 <CardContent className="p-4 text-center">
@@ -175,12 +175,12 @@ export default function DressCodePage() {
               </Card>
 
               <Card className="bg-white shadow-md border-amber-200 overflow-hidden">
-                <div className="relative h-48">
+                <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Reception+Cocktail+Dress"
-                    alt="Reception cocktail dress inspiration"
+                    src="/Reception Chic Cocktail party ready.webp"
+                    alt="Reception cocktail dress - chic and party ready attire"
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
                   />
                 </div>
                 <CardContent className="p-4 text-center">
@@ -190,12 +190,12 @@ export default function DressCodePage() {
               </Card>
 
               <Card className="bg-white shadow-md border-amber-200 overflow-hidden">
-                <div className="relative h-48">
+                <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Formal+Suit+Style"
-                    alt="Formal suit style inspiration"
+                    src="/Timeless gentleman's style.webp"
+                    alt="Formal suit style - timeless gentleman's attire"
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
                   />
                 </div>
                 <CardContent className="p-4 text-center">
@@ -205,12 +205,12 @@ export default function DressCodePage() {
               </Card>
 
               <Card className="bg-white shadow-md border-amber-200 overflow-hidden">
-                <div className="relative h-48">
+                <div className="relative h-80">
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Smart+Casual+Look"
-                    alt="Smart casual look inspiration"
+                    src="/Smart Casual Relaxed yet refined.webp"
+                    alt="Smart casual look - relaxed yet refined attire"
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
                   />
                 </div>
                 <CardContent className="p-4 text-center">

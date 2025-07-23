@@ -13,23 +13,37 @@ export default function HomePage() {
       {/* Hero Section */}
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          {/* Video Background */}
+          {/* Video Background - Desktop Only */}
           <video
             autoPlay
             loop
             muted
             playsInline
             controls={false}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="hidden md:block absolute inset-0 w-full h-full object-cover"
             style={{ objectFit: "cover" }}
           >
             <source src="/dandv.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          
+          {/* Image Background - Mobile Only */}
+          <Image
+            src="/mobile.jpg"
+            alt="Diana and Victor"
+            fill
+            className="block md:hidden object-cover object-center"
+            priority
+            quality={90}
+            sizes="100vw"
+          />
+          
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/20 to-transparent"></div>
         </div>
-        {/* <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+        
+        {/* Hero Content - Mobile Only */}
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 block md:hidden">
           <div className="backdrop-blur-sm bg-white/10 rounded-2xl p-8 md:p-12 border border-white/20">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6 drop-shadow-lg">Diana & Victor</h1>
             <p className="text-xl md:text-3xl mb-8 font-light drop-shadow-md">are getting married</p>
@@ -51,10 +65,54 @@ export default function HomePage() {
               <Link href="/rsvp">RSVP Now</Link>
             </Button>
           </div>
-        </div> */}
+        </div>
+
+        {/* Desktop Wedding Banner - Positioned at bottom of video */}
+        <div className="hidden md:block absolute bottom-0 left-0 right-0 z-20">
+          <div className="bg-gradient-to-r from-amber-900/95 via-amber-800/95 to-amber-900/95 backdrop-blur-md border-t border-amber-400/30">
+            <div className="container mx-auto px-8 py-6">
+              <div className="flex items-center justify-between">
+                {/* Left: Names */}
+                <div className="text-white">
+                  <h1 className="text-4xl lg:text-5xl font-serif font-bold text-amber-100 mb-1">Diana & Victor</h1>
+                  <p className="text-amber-200 text-lg font-light">are getting married</p>
+                </div>
+                
+                {/* Center: Wedding Details */}
+                <div className="flex items-center gap-8 text-white">
+                  <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
+                    <Calendar className="w-5 h-5 text-amber-300" />
+                    <div className="text-center">
+                      <p className="text-sm text-amber-200">Wedding Date</p>
+                      <p className="font-semibold">December 4th, 2025</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
+                    <MapPin className="w-5 h-5 text-amber-300" />
+                    <div className="text-center">
+                      <p className="text-sm text-amber-200">Location</p>
+                      <p className="font-semibold">Pretoria, South Africa</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Right: RSVP Button */}
+                <div>
+                  <Button
+                    asChild
+                    className="bg-amber-600 hover:bg-amber-500 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-400/50"
+                  >
+                    <Link href="/rsvp">RSVP Now</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce md:hidden">
           <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
           </div>
