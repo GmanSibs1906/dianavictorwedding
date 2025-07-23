@@ -62,7 +62,7 @@ export default function HomePage() {
               asChild
               className="bg-amber-600/90 hover:bg-amber-700 text-white px-10 py-4 text-lg backdrop-blur-sm border border-amber-500/50 shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Link href="/rsvp">RSVP Now</Link>
+              <a href="https://tally.so/r/w29MBe" target="_blank" rel="noopener noreferrer">RSVP Now</a>
             </Button>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function HomePage() {
                     asChild
                     className="bg-amber-600 hover:bg-amber-500 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-400/50"
                   >
-                    <Link href="/rsvp">RSVP Now</Link>
+                    <a href="https://tally.so/r/w29MBe" target="_blank" rel="noopener noreferrer">RSVP Now</a>
                   </Button>
                 </div>
               </div>
@@ -318,7 +318,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <Button className="mt-6 bg-amber-600 hover:bg-amber-700" asChild>
-                  <Link href="/rsvp">RSVP Now</Link>
+                  <a href="https://tally.so/r/w29MBe" target="_blank" rel="noopener noreferrer">RSVP Now</a>
                 </Button>
               </CardContent>
             </Card>

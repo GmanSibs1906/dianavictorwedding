@@ -52,7 +52,7 @@ export function Navigation() {
               className="bg-amber-600 hover:bg-amber-700 text-white font-medium px-6 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
             >
               <a
-                href="https://tally.so/r/wedding-rsvp"
+                href="https://tally.so/r/w29MBe"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1"

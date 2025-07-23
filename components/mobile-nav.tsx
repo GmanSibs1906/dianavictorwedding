@@ -16,7 +16,6 @@ export function MobileNav() {
     { href: "/gift-registry", label: "Gift Registry" },
     { href: "/accommodation", label: "Accommodation" },
     { href: "/dress-code", label: "Dress Code" },
-    { href: "/bridal-party", label: "Bridal Party" },
     { href: "/faq", label: "FAQ" },
   ]
 
@@ -36,7 +35,7 @@ export function MobileNav() {
         size="sm"
       >
         <a
-          href="https://tally.so/r/wedding-rsvp"
+          href="https://tally.so/r/w29MBe"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1"
@@ -77,7 +76,7 @@ export function MobileNav() {
                 className="bg-amber-600 hover:bg-amber-700 text-white font-medium w-full py-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
               >
                 <a
-                  href="https://tally.so/r/wedding-rsvp"
+                  href="https://tally.so/r/w29MBe"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2"
