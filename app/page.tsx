@@ -44,7 +44,7 @@ export default function HomePage() {
         
         {/* Hero Content - Mobile Only */}
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 block md:hidden">
-          <div className="backdrop-blur-sm bg-white/10 rounded-2xl p-8 md:p-12 border border-white/20">
+          <div className=" bg-white/10 rounded-2xl p-8 md:p-12 border border-white/20">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6 drop-shadow-lg">Diana & Victor</h1>
             <p className="text-xl md:text-3xl mb-8 font-light drop-shadow-md">are getting married</p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-lg md:text-xl mb-8">
