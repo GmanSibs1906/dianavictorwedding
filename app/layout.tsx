@@ -8,7 +8,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 
 export const metadata: Metadata = {
   title: "Diana & Victor - Wedding",
-  description: "Join us as we celebrate our love story in beautiful Tuscany",
+  description: "Join us as we celebrate our love story",
     generator: 'v0.dev'
 }
 
