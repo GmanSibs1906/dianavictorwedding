@@ -34,15 +34,13 @@ export default function DressCodePage() {
                 <CardHeader className="text-center">
                   <Sun className="w-12 h-12 text-amber-600 mx-auto mb-4" />
                   <CardTitle className="text-2xl font-serif text-amber-900">Ceremony Attire</CardTitle>
-                  <p className="text-amber-600">12:30 PM - Sacred Heart Cathedral</p>
+                  <p className="text-amber-600">12:00 PM - Sacred Heart Cathedral</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-amber-800 mb-2">For Ladies:</h4>
                     <ul className="text-gray-700 space-y-1 text-sm">
-                      <li>• Formal or semi-formal dresses</li>
-                      <li>• Modest necklines and covered shoulders (church setting)</li>
-                      <li>• Knee-length or longer preferred</li>
+                      <li>• Formal or semi-formal dresses</li>                    
                       <li>• Elegant blouses with dress pants or skirts</li>
                       <li>• Comfortable heels or flats for walking</li>
                     </ul>
@@ -71,10 +69,8 @@ export default function DressCodePage() {
                   <div>
                     <h4 className="font-semibold text-amber-800 mb-2">For Ladies:</h4>
                     <ul className="text-gray-700 space-y-1 text-sm">
-                      <li>• Cocktail dresses or elegant evening wear</li>
-                      <li>• More relaxed necklines acceptable</li>
-                      <li>• Midi or maxi dresses welcome</li>
-                      <li>• Dressy separates or jumpsuits</li>
+                      <li>• Cocktail dresses </li>                      
+                      <li>• Elegant evening wear</li>
                       <li>• Dancing-friendly shoes recommended</li>
                     </ul>
                   </div>
