@@ -247,7 +247,6 @@ export default function AccommodationPage() {
                 <CardContent className="p-8">
                   <h3 className="text-xl font-serif text-amber-800 mb-4">Transportation</h3>
                   <ul className="space-y-3 text-gray-700">
-                    <li>• Complimentary shuttle service available from Sheraton to ceremony venue</li>
                     <li>• Uber and Bolt are readily available throughout Pretoria</li>
                     <li>• Car rental services available at OR Tambo International Airport</li>
                     <li>• Taxi services can be arranged through your hotel concierge</li>
