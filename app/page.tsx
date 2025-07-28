@@ -192,7 +192,7 @@ export default function HomePage() {
                     <MapPin className="w-5 h-5 text-amber-600 mt-1" />
                     <div className="text-center">
                       <p className="font-semibold">Sacred Heart Cathedral</p>
-                      <p className="text-sm" href="https://maps.app.goo.gl/dtxa9xERuMPyzedH7">Nana Sita Street Cnr Bosman Street</p>
+                      <a className="text-sm" href="https://maps.app.goo.gl/dtxa9xERuMPyzedH7">Nana Sita Street Cnr Bosman Street</a>
                       <p className="text-sm">Pretoria Central, Pretoria, 0001</p>
                     </div>
                   </div>
