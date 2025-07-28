@@ -186,7 +186,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center justify-center gap-2">
                     <Clock className="w-5 h-5 text-amber-600" />
-                    <span>12:30 PM (Arrival at 12:00 PM)</span>
+                    <span>12:00 PM</span>
                   </div>
                   <div className="flex items-start justify-center gap-2 mt-4">
                     <MapPin className="w-5 h-5 text-amber-600 mt-1" />
