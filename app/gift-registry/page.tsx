@@ -273,11 +273,11 @@ export default function GiftRegistryPage() {
                       <div>
                         <p className="font-semibold">Home Address:</p>
                         <p className="text-sm">
-                          123 Wedding Lane
+                         589 Bach Street,
                           <br />
-                          Pretoria, Gauteng 0001
+                          Constantia Park,
                           <br />
-                          South Africa
+                          Pretoria, 0181
                         </p>
                       </div>
                     </div>
@@ -317,11 +317,11 @@ export default function GiftRegistryPage() {
                   <div className="flex items-center justify-center gap-4 text-sm">
                     <div className="flex items-center gap-1">
                       <Mail className="w-4 h-4" />
-                      <span>wedding@dianaandvictor.com</span>
+                      <span>weddingdianavictor@gmail.com</span>
                     </div>
                     <div className="flex items-center gap-1">
                       <Phone className="w-4 h-4" />
-                      <span>+27 12 345 6789</span>
+                      <span>+27 79 246 8279</span>
                     </div>
                   </div>
                 </div>
