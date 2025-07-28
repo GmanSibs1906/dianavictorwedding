@@ -192,7 +192,7 @@ export default function HomePage() {
                     <MapPin className="w-5 h-5 text-amber-600 mt-1" />
                     <div className="text-center">
                       <p className="font-semibold">Sacred Heart Cathedral</p>
-                      <p className="text-sm">Nana Sita Street</p>
+                      <p className="text-sm" href="https://maps.app.goo.gl/dtxa9xERuMPyzedH7">Nana Sita Street Cnr Bosman Street</p>
                       <p className="text-sm">Pretoria Central, Pretoria, 0001</p>
                     </div>
                   </div>
@@ -212,7 +212,9 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center justify-center gap-2">
                     <Clock className="w-5 h-5 text-amber-600" />
-                    <span>6:00 PM (Arrival at 5:00 PM)</span>
+                    <span>Cocktail Hour: Starts at 16:00 <br>
+                    Reception: Starts at 17:00
+                    </></span>
                   </div>
                   <div className="flex items-start justify-center gap-2 mt-4">
                     <MapPin className="w-5 h-5 text-amber-600 mt-1" />
