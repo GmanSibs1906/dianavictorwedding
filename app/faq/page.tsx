@@ -37,9 +37,7 @@ export default function FAQPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-gray-700">
-                    Please arrive at the Sacred Heart Cathedral by 12:00 PM for the ceremony, which begins promptly at
-                    12:30 PM. For the reception at De Harte Wedding Venue, please arrive by 5:00 PM for cocktails, with
-                    dinner service beginning at 6:00 PM.
+                    Please arrive at the Sacred Heart Cathedral by 12:00 PM for the ceremony. For the reception, kindly mention guests should arrive by 16:00 for cocktails and canapés, with the formal reception starting at 17:00.
                   </AccordionContent>
                 </AccordionItem>
               </Card>
@@ -53,9 +51,7 @@ export default function FAQPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-gray-700">
-                    Free parking is available at both venues. The Sacred Heart Cathedral has a parking lot adjacent to
-                    the church. De Harte Wedding Venue offers ample parking on-site. Valet parking will also be
-                    available at the reception venue.
+                   Available both around and inside the church. De Harte venue has ample parking space.
                   </AccordionContent>
                 </AccordionItem>
               </Card>
@@ -85,9 +81,7 @@ export default function FAQPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-gray-700">
-                    Your presence is the greatest gift! However, if you'd like to give something, we've registered at
-                    several stores and have a honeymoon fund. You can find all the details on our Gift Registry page.
-                    Gifts can be sent to our home address or brought to the reception.
+                    We have established a gift registry, and cash contributions are also welcome.
                   </AccordionContent>
                 </AccordionItem>
               </Card>
@@ -101,9 +95,7 @@ export default function FAQPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-gray-700">
-                    We'll be serving a delicious three-course dinner featuring both South African and international
-                    cuisine. Vegetarian, vegan, and gluten-free options will be available. Please let us know about any
-                    dietary restrictions when you RSVP so we can accommodate your needs.
+                    Our culinary selection features a blend of South African, Congolese, and Zambian cuisines, complemented by a variety of international options. We are also pleased to accommodate any dietary needs upon request.
                   </AccordionContent>
                 </AccordionItem>
               </Card>
@@ -153,9 +145,7 @@ export default function FAQPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-gray-700">
-                    There will be a break between the ceremony and reception for photos and venue setup. Guests staying
-                    at the Sheraton Pretoria Hotel can take advantage of complimentary shuttle service. For other
-                    guests, we recommend using Uber, Bolt, or the taxi services available through your hotel.
+                    All guests are kindly requested to arrange their own transportation.
                   </AccordionContent>
                 </AccordionItem>
               </Card>
@@ -185,9 +175,7 @@ export default function FAQPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-gray-700">
-                    The reception will run until approximately 11:00 PM. We'll have a last dance around 10:45 PM,
-                    followed by our grand exit. The venue will remain open for a short time afterward for guests to
-                    collect personal items and say final goodbyes.
+                    The reception will conclude promptly at midnight.
                   </AccordionContent>
                 </AccordionItem>
               </Card>
@@ -196,14 +184,12 @@ export default function FAQPage() {
                 <AccordionItem value="item-11" className="border-none">
                   <AccordionTrigger className="px-6 py-4 hover:no-underline">
                     <div className="flex items-center gap-3">
-                      <MapPin className="w-5 h-5 text-amber-600" />
-                      <span className="text-left font-serif text-amber-900">What if it rains?</span>
+                      <Utensils className="w-5 h-5 text-amber-600" />
+                      <span className="text-left font-serif text-amber-900">What to expect at the bar?</span>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-gray-700">
-                    December is summer in South Africa, and while afternoon thundershowers are possible, both venues are
-                    fully covered. The ceremony will be held inside the cathedral, and the reception venue has both
-                    indoor and covered outdoor areas, so we're prepared for any weather!
+                    A bar will be available, offering complimentary soft drinks, juices, beer, and wines. Hard liquor will be available for purchase.
                   </AccordionContent>
                 </AccordionItem>
               </Card>
@@ -220,8 +206,8 @@ export default function FAQPage() {
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 text-gray-700">
                     For any questions not covered here, please feel free to reach out to us directly:
-                    <br />• Email: wedding@dianaandvictor.com
-                    <br />• Phone: +27 12 345 6789
+                    <br />• Email: weddingdianavictor@gmail.com
+                    <br />• Phone: +27 79 246 8279
                     <br />
                     We're happy to help with any concerns or special requests you might have!
                   </AccordionContent>
