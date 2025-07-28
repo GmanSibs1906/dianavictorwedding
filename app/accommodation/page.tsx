@@ -275,13 +275,13 @@ export default function AccommodationPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild className="bg-amber-600 hover:bg-amber-700">
-                    <Link href="mailto:wedding@dianaandvictor.com">
+                    <Link href="mailto:weddingdianavictor@gmail.com">
                       <Mail className="w-4 h-4 mr-2" />
                       Email Us
                     </Link>
                   </Button>
                   <Button asChild variant="outline" className="border-amber-300 bg-transparent">
-                    <Link href="tel:+27123456789">
+                    <Link href="tel:+27 79 246 8279">
                       <Phone className="w-4 h-4 mr-2" />
                       Call Us
                     </Link>
