@@ -305,16 +305,16 @@ export default function HomePage() {
                 </p>
                 <div className="space-y-4">
                   <div>
-                    <p className="font-semibold text-amber-800">Wedding Coordinators</p>
-                    <p className="text-gray-700">Diana & Victor</p>
+                    <p className="font-semibold text-amber-800">Wedding Coordinator</p>
+                    <p className="text-gray-700">Juanita Beukes</p>
                   </div>
                   <div>
                     <p className="font-semibold text-amber-800">Email</p>
-                    <p className="text-gray-700">wedding@dianaandvictor.com</p>
+                    <p className="text-gray-700">weddingdianavictor@gmail.com</p>
                   </div>
                   <div>
                     <p className="font-semibold text-amber-800">Phone</p>
-                    <p className="text-gray-700">+27 12 345 6789</p>
+                    <p className="text-gray-700">+27 79 246 8279</p>
                   </div>
                 </div>
                 <Button className="mt-6 bg-amber-600 hover:bg-amber-700" asChild>
