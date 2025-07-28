@@ -182,7 +182,7 @@ export default function HomePage() {
                 <div className="space-y-3 text-gray-700">
                   <div className="flex items-center justify-center gap-2">
                     <Calendar className="w-5 h-5 text-amber-600" />
-                    <span>Wednesday, December 4th, 2025</span>
+                    <span>Thursday, December 4th, 2025</span>
                   </div>
                   <div className="flex items-center justify-center gap-2">
                     <Clock className="w-5 h-5 text-amber-600" />
@@ -208,7 +208,7 @@ export default function HomePage() {
                 <div className="space-y-3 text-gray-700">
                   <div className="flex items-center justify-center gap-2">
                     <Calendar className="w-5 h-5 text-amber-600" />
-                    <span>Wednesday, December 4th, 2025</span>
+                    <span>Thursday, December 4th, 2025</span>
                   </div>
                   <div className="flex items-center justify-center gap-2">
                     <Clock className="w-5 h-5 text-amber-600" />
