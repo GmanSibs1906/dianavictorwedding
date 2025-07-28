@@ -214,7 +214,7 @@ export default function HomePage() {
                     <Clock className="w-5 h-5 text-amber-600" />
                     <span>Cocktail Hour: Starts at 16:00 <br>
                     Reception: Starts at 17:00
-                    </></span>
+                    </span>
                   </div>
                   <div className="flex items-start justify-center gap-2 mt-4">
                     <MapPin className="w-5 h-5 text-amber-600 mt-1" />
