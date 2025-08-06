@@ -40,7 +40,7 @@ export default function HomePage() {
         </div>
         
         {/* Hero Content */}
-        <div className=" md:hidden hero-content-editorial animate-fade-editorial">
+        <div className=" hero-content-editorial animate-fade-editorial">
           <h1 className="hero-title-editorial text-shadow-editorial">
             Diana & Victor
           </h1>
