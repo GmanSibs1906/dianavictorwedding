@@ -41,10 +41,10 @@ export default function HomePage() {
         
         {/* Hero Content */}
         <div className=" hero-content-editorial animate-fade-editorial">
-          <h1 className="hero-title-editorial text-shadow-editorial">
+          <h1 className=" md:hidden hero-title-editorial text-shadow-editorial">
             Diana & Victor
           </h1>
-          <p className="hero-subtitle-editorial">
+          <p className=" md:hidden hero-subtitle-editorial">
             An Editorial Wedding
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-lg mb-12">
@@ -60,7 +60,7 @@ export default function HomePage() {
           </div>
           <Button
             asChild
-            className="amber-button text-lg px-12 py-4"
+            className=" md:hidden amber-button text-lg px-12 py-4"
           >
             <a href="https://tally.so/r/w29MBe" target="_blank" rel="noopener noreferrer">RSVP</a>
           </Button>
