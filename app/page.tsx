@@ -7,11 +7,11 @@ import { Navigation } from "@/components/navigation"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
 
       {/* Hero Section */}
-      <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="hero-editorial relative overflow-hidden">
         <div className="absolute inset-0">
           {/* Video Background - Desktop Only */}
           <video
@@ -37,107 +37,59 @@ export default function HomePage() {
             quality={90}
             sizes="100vw"
           />
-          
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/20 to-transparent"></div>
         </div>
         
-        {/* Hero Content - Mobile Only */}
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 block md:hidden">
-          <div className=" bg-white/10 rounded-2xl p-8 md:p-12 border border-white/20">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6 drop-shadow-lg">Diana & Victor</h1>
-            <p className="text-xl md:text-3xl mb-8 font-light drop-shadow-md">are getting married</p>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-lg md:text-xl mb-8">
-              <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <Calendar className="w-6 h-6" />
-                <span>December 4th, 2025</span>
-              </div>
-              <div className="hidden md:block text-white/60">•</div>
-              <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <MapPin className="w-6 h-6" />
-                <span>Pretoria, South Africa</span>
-              </div>
+        {/* Hero Content */}
+        <div className=" md:hidden hero-content-editorial animate-fade-editorial">
+          <h1 className="hero-title-editorial text-shadow-editorial">
+            Diana & Victor
+          </h1>
+          <p className="hero-subtitle-editorial">
+            An Editorial Wedding
+          </p>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-lg mb-12">
+            <div className="flex items-center gap-3 bg-white/15 backdrop-blur-sm rounded-none px-8 py-4 border border-white/20">
+              <Calendar className="w-6 h-6" />
+              <span className="font-cormorant font-light tracking-wide">December 4th, 2025</span>
             </div>
-            <Button
-              asChild
-              className="bg-amber-600/90 hover:bg-amber-700 text-white px-10 py-4 text-lg backdrop-blur-sm border border-amber-500/50 shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <a href="https://tally.so/r/w29MBe" target="_blank" rel="noopener noreferrer">RSVP Now</a>
-            </Button>
-          </div>
-        </div>
-
-        {/* Desktop Wedding Banner - Positioned at bottom of video */}
-        <div className="hidden md:block absolute bottom-0 left-0 right-0 z-20">
-          <div className="bg-gradient-to-r from-amber-900/95 via-amber-800/95 to-amber-900/95 backdrop-blur-md border-t border-amber-400/30">
-            <div className="container mx-auto px-8 py-6">
-              <div className="flex items-center justify-between">
-                {/* Left: Names */}
-                <div className="text-white">
-                  <h1 className="text-4xl lg:text-5xl font-serif font-bold text-amber-100 mb-1">Diana & Victor</h1>
-                  <p className="text-amber-200 text-lg font-light">are getting married</p>
-                </div>
-                
-                {/* Center: Wedding Details */}
-                <div className="flex items-center gap-8 text-white">
-                  <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
-                    <Calendar className="w-5 h-5 text-amber-300" />
-                    <div className="text-center">
-                      <p className="text-sm text-amber-200">Wedding Date</p>
-                      <p className="font-semibold">December 4th, 2025</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
-                    <MapPin className="w-5 h-5 text-amber-300" />
-                    <div className="text-center">
-                      <p className="text-sm text-amber-200">Location</p>
-                      <p className="font-semibold">Pretoria, South Africa</p>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Right: RSVP Button */}
-                <div>
-                  <Button
-                    asChild
-                    className="bg-amber-600 hover:bg-amber-500 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 border border-amber-400/50"
-                  >
-                    <a href="https://tally.so/r/w29MBe" target="_blank" rel="noopener noreferrer">RSVP Now</a>
-                  </Button>
-                </div>
-              </div>
+            <div className="hidden md:block text-white/60 font-editorial">•</div>
+            <div className="flex items-center gap-3 bg-white/15 backdrop-blur-sm rounded-none px-8 py-4 border border-white/20">
+              <MapPin className="w-6 h-6" />
+              <span className="font-cormorant font-light tracking-wide">Pretoria, South Africa</span>
             </div>
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce md:hidden">
-          <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
-          </div>
+          <Button
+            asChild
+            className="amber-button text-lg px-12 py-4"
+          >
+            <a href="https://tally.so/r/w29MBe" target="_blank" rel="noopener noreferrer">RSVP</a>
+          </Button>
         </div>
       </section>
 
+      {/* Editorial Divider */}
+      <div className="editorial-divider">
+        <span>Our Story</span>
+      </div>
+
       {/* Our Story Section */}
-      <section id="story" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-serif text-center text-amber-900 mb-12">Our Love Story</h2>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
+      <section className="py-24 bg-white">
+        <div className="magazine-grid container mx-auto px-6">
+          <div className="magazine-content">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div className="animate-slide-editorial">
                 <Image
                   src="/page1.jpg"
                   alt="Diana and Victor"
                   width={600}
                   height={800}
-                  className="rounded-lg shadow-lg"
+                  className="w-full h-auto shadow-lg"
                 />
               </div>
-              <div className="space-y-6">
+              <div className="space-y-8 animate-fade-editorial">
                 <div>
-                  <h3 className="text-2xl font-serif text-amber-800 mb-3">How We Met</h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">How We Met</h3>
+                  <p className="text-gray-700 leading-relaxed font-cormorant text-lg">
                     It all began at the Parish of Maria Regina, not inside the church, but in the quiet familiarity of
                     the parish home, where Diana's late cousin was serving as a priest (Rest in Peace Fr. Muhau). That
                     is where Victor and Diana first crossed paths. There were no grand declarations or instant sparks,
@@ -146,8 +98,8 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-serif text-amber-800 mb-3">From Friends to Forever</h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">From Friends to Forever</h3>
+                  <p className="text-gray-700 leading-relaxed font-cormorant text-lg">
                     In the years that followed, they became friends. The kind of friends who laugh easily, talk often,
                     and genuinely enjoy each other's company. Their friendship was patient and steady, growing quietly
                     in the background of their busy lives. But time has a way of revealing what is meant to be. What
@@ -155,8 +107,8 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-serif text-amber-800 mb-3">The Puppy That Stole Hearts</h3>
-                  <p className="text-gray-700 leading-relaxed">
+                  <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">The Puppy That Stole Hearts</h3>
+                  <p className="text-gray-700 leading-relaxed font-cormorant text-lg">
                     And then, there was the puppy. Victor, knowing Diana's love for dogs, surprised her with a
                     mischievous little one. That pup brought chaos and laughter into the house and quickly became a
                     beloved member of the family. Just like Victor did. Their story has always been about love built on
@@ -169,169 +121,165 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Editorial Divider */}
+      <div className="editorial-divider">
+        <span>The Celebration</span>
+      </div>
+
       {/* Wedding Details */}
-      <section id="details" className="py-20 bg-amber-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-serif text-center text-amber-900 mb-12">Wedding Details</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Ceremony Card */}
-            <Card className="bg-white shadow-lg border-amber-200">
-              <CardContent className="p-8 text-center">
-                <Church className="w-16 h-16 text-amber-600 mx-auto mb-6" />
-                <h3 className="text-2xl font-serif text-amber-900 mb-4">Holy Ceremony</h3>
-                <div className="space-y-3 text-gray-700">
-                  <div className="flex items-center justify-center gap-2">
+      <section className="py-24 bg-amber-50">
+        <div className="magazine-grid container mx-auto px-6">
+          <div className="magazine-content">
+            <div className="grid md:grid-cols-2 gap-12">
+              {/* Ceremony Card */}
+              <div className="card-editorial p-10 text-center">
+                <Church className="w-16 h-16 text-amber-600 mx-auto mb-8" />
+                <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">Holy Ceremony</h3>
+                <div className="space-y-6 text-gray-700 font-cormorant">
+                  <div className="flex items-center justify-center gap-3">
                     <Calendar className="w-5 h-5 text-amber-600" />
-                    <span>Thursday, December 4th, 2025</span>
+                    <span className="text-lg">Thursday, December 4th, 2025</span>
                   </div>
-                  <div className="flex items-center justify-center gap-2">
+                  <div className="flex items-center justify-center gap-3">
                     <Clock className="w-5 h-5 text-amber-600" />
-                    <span>12:00 PM</span>
+                    <span className="text-lg">12:00 PM</span>
                   </div>
-                  <div className="flex items-start justify-center gap-2 mt-4">
+                  <div className="flex items-start justify-center gap-3 mt-6">
                     <MapPin className="w-5 h-5 text-amber-600 mt-1" />
                     <div className="text-center">
-                      <a href="https://maps.app.goo.gl/dtxa9xERuMPyzedH7" className="font-semibold">Sacred Heart Cathedral</a>
-                      <p className="text-sm">Nana Sita Street</p>
-                      <p className="text-sm">Pretoria Central, Pretoria, 0001</p>
+                      <a href="https://maps.app.goo.gl/dtxa9xERuMPyzedH7" className="font-semibold text-amber-900 hover:text-amber-600 transition-colors">Sacred Heart Cathedral</a>
+                      <p className="text-base">Nana Sita Street</p>
+                      <p className="text-base">Pretoria Central, Pretoria, 0001</p>
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            {/* Reception Card */}
-            <Card className="bg-white shadow-lg border-amber-200">
-              <CardContent className="p-8 text-center">
-                <Heart className="w-16 h-16 text-amber-600 mx-auto mb-6" />
-                <h3 className="text-2xl font-serif text-amber-900 mb-4">Reception Celebration</h3>
-                <div className="space-y-3 text-gray-700">
-                  <div className="flex items-center justify-center gap-2">
+              {/* Reception Card */}
+              <div className="card-editorial p-10 text-center">
+                <Heart className="w-16 h-16 text-amber-600 mx-auto mb-8" />
+                <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">Reception Celebration</h3>
+                <div className="space-y-6 text-gray-700 font-cormorant">
+                  <div className="flex items-center justify-center gap-3">
                     <Calendar className="w-5 h-5 text-amber-600" />
-                    <span>Thursday, December 4th, 2025</span>
+                    <span className="text-lg">Thursday, December 4th, 2025</span>
                   </div>
-                  <div className="flex items-center justify-center gap-2">
+                  <div className="flex items-center justify-center gap-3">
                     <Clock className="w-5 h-5 text-amber-600" />
-                    <span>Reception: Starts at 17:00 (Cocktail Hour: Starts at 16:00)</span>
+                    <span className="text-lg">Cocktail Hour: Starts at 16:00<br/>Reception: Starts at 17:00</span>
                   </div>
-                  <div className="flex items-start justify-center gap-2 mt-4">
+                  <div className="flex items-start justify-center gap-3 mt-6">
                     <MapPin className="w-5 h-5 text-amber-600 mt-1" />
                     <div className="text-center">
-                      <p className="font-semibold">De Harte Wedding Venue</p>
-                      <p className="text-sm">206 Rentia Street</p>
-                      <p className="text-sm">Onderstepoort, Pretoria, 0110</p>
+                      <p className="font-semibold text-amber-900">De Harte Wedding Venue</p>
+                      <p className="text-base">206 Rentia Street</p>
+                      <p className="text-base">Onderstepoort, Pretoria, 0110</p>
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+              </div>
+            </div>
 
-          {/* Family Introduction */}
-          <div className="mt-16 max-w-4xl mx-auto">
-            <Card className="bg-white shadow-lg border-amber-200">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-serif text-center text-amber-900 mb-8">Our Families</h3>
-                <div className="grid md:grid-cols-2 gap-8">
+            {/* Family Introduction */}
+            <div className="mt-20">
+              <div className="card-editorial p-12">
+                <h3 className="text-4xl font-editorial text-center text-amber-900 mb-12 tracking-wide">Our Families</h3>
+                <div className="grid md:grid-cols-2 gap-12">
                   <div className="text-center">
-                    <h4 className="text-xl font-serif text-amber-800 mb-4">The Bride</h4>
-                    <div className="space-y-2 text-gray-700">
-                      <p className="text-lg font-semibold">Zaka Diana Mawoko</p>
-                      <p className="text-sm">Daughter of</p>
+                    <h4 className="text-2xl font-cormorant text-amber-600 mb-6">The Bride</h4>
+                    <div className="space-y-3 text-gray-700 font-cormorant text-lg">
+                      <p className="text-xl font-semibold text-amber-900">Zaka Diana Mawoko</p>
+                      <p className="text-base uppercase tracking-widest text-gray-600">Daughter of</p>
                       <p>Prof. Kuhutama Philippe Mawoko</p>
                       <p>&</p>
                       <p>Mrs. Eugenie Mawoko</p>
                     </div>
                   </div>
                   <div className="text-center">
-                    <h4 className="text-xl font-serif text-amber-800 mb-4">The Groom</h4>
-                    <div className="space-y-2 text-gray-700">
-                      <p className="text-lg font-semibold">Victor Sitanimezi</p>
-                      <p className="text-sm">Son of</p>
+                    <h4 className="text-2xl font-cormorant text-amber-600 mb-6">The Groom</h4>
+                    <div className="space-y-3 text-gray-700 font-cormorant text-lg">
+                      <p className="text-xl font-semibold text-amber-900">Victor Sitanimezi</p>
+                      <p className="text-base uppercase tracking-widest text-gray-600">Son of</p>
                       <p>Late Mr. Stanley Sitanimezi</p>
                       <p>&</p>
                       <p>Late Mrs. Margaret Sitanimezi</p>
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      {/* Editorial Divider */}
+      <div className="editorial-divider">
+        <span>Wedding Information</span>
+      </div>
+
       {/* Quick Links */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif text-center text-amber-900 mb-12">Wedding Information</h2>
-          <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            <Button asChild variant="outline" className="h-20 border-amber-300 hover:bg-amber-50 bg-transparent">
-              <Link href="/accommodation" className="flex flex-col items-center gap-2">
-                <MapPin className="w-6 h-6" />
-                <span>Accommodation</span>
+      <section className="py-24 bg-white">
+        <div className="magazine-grid container mx-auto px-6">
+          <div className="magazine-content">
+            <div className="grid md:grid-cols-4 gap-8">
+              <Link href="/accommodation" className="card-editorial p-8 text-center group hover:bg-amber-50 transition-all duration-300">
+                <MapPin className="w-12 h-12 text-amber-600 mx-auto mb-6 group-hover:scale-110 transition-transform" />
+                <span className="font-cormorant text-lg text-amber-900 uppercase tracking-wider">Accommodation</span>
               </Link>
-            </Button>
-            <Button asChild variant="outline" className="h-20 border-amber-300 hover:bg-amber-50 bg-transparent">
-              <Link href="/dress-code" className="flex flex-col items-center gap-2">
-                <Users className="w-6 h-6" />
-                <span>Dress Code</span>
+              <Link href="/dress-code" className="card-editorial p-8 text-center group hover:bg-amber-50 transition-all duration-300">
+                <Users className="w-12 h-12 text-amber-600 mx-auto mb-6 group-hover:scale-110 transition-transform" />
+                <span className="font-cormorant text-lg text-amber-900 uppercase tracking-wider">Dress Code</span>
               </Link>
-            </Button>
-            <Button asChild variant="outline" className="h-20 border-amber-300 hover:bg-amber-50 bg-transparent">
-              <Link href="/faq" className="flex flex-col items-center gap-2">
-                <HelpCircle className="w-6 h-6" />
-                <span>FAQ</span>
+              <Link href="/faq" className="card-editorial p-8 text-center group hover:bg-amber-50 transition-all duration-300">
+                <HelpCircle className="w-12 h-12 text-amber-600 mx-auto mb-6 group-hover:scale-110 transition-transform" />
+                <span className="font-cormorant text-lg text-amber-900 uppercase tracking-wider">FAQ</span>
               </Link>
-            </Button>
-            <Button asChild variant="outline" className="h-20 border-amber-300 hover:bg-amber-50 bg-transparent">
-              <Link href="/gift-registry" className="flex flex-col items-center gap-2">
-                <Gift className="w-6 h-6" />
-                <span>Gift Registry</span>
+              <Link href="/gift-registry" className="card-editorial p-8 text-center group hover:bg-amber-50 transition-all duration-300">
+                <Gift className="w-12 h-12 text-amber-600 mx-auto mb-6 group-hover:scale-110 transition-transform" />
+                <span className="font-cormorant text-lg text-amber-900 uppercase tracking-wider">Gift Registry</span>
               </Link>
-            </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact Information */}
-      <section className="py-16 bg-amber-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-serif text-amber-900 mb-8">Questions?</h2>
-            <Card className="bg-white shadow-lg border-amber-200">
-              <CardContent className="p-8">
-                <p className="text-gray-700 mb-6">
-                  If you have any questions about our special day, please don't hesitate to reach out to us.
-                </p>
-                <div className="space-y-4">
-                  <div>
-                    <p className="font-semibold text-amber-800">Wedding Coordinator</p>
-                    <p className="text-gray-700">Juanita Beukes</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-amber-800">Email</p>
-                    <p className="text-gray-700">weddingdianavictor@gmail.com</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-amber-800">Phone</p>
-                    <p className="text-gray-700">+27 79 246 8279</p>
-                  </div>
+      <section className="py-24 bg-amber-50">
+        <div className="magazine-grid container mx-auto px-6">
+          <div className="magazine-content max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl font-editorial text-amber-900 mb-12 tracking-wide">Questions?</h2>
+            <div className="card-editorial p-12">
+              <p className="text-gray-700 font-cormorant text-lg leading-relaxed mb-8">
+                If you have any questions about our special day, please don't hesitate to reach out to us.
+              </p>
+              <div className="space-y-6">
+                <div>
+                  <p className="font-semibold text-amber-600 font-cormorant text-lg uppercase tracking-wider">Wedding Coordinator</p>
+                  <p className="text-amber-900 font-cormorant text-lg">Juanita Beukes</p>
                 </div>
-                <Button className="mt-6 bg-amber-600 hover:bg-amber-700" asChild>
-                  <a href="https://tally.so/r/w29MBe" target="_blank" rel="noopener noreferrer">RSVP Now</a>
-                </Button>
-              </CardContent>
-            </Card>
+                <div>
+                  <p className="font-semibold text-amber-600 font-cormorant text-lg uppercase tracking-wider">Email</p>
+                  <p className="text-amber-900 font-cormorant text-lg">weddingdianavictor@gmail.com</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-amber-600 font-cormorant text-lg uppercase tracking-wider">Phone</p>
+                  <p className="text-amber-900 font-cormorant text-lg">+27 79 246 8279</p>
+                </div>
+              </div>
+              <Button className="amber-button mt-8" asChild>
+                <a href="https://tally.so/r/w29MBe" target="_blank" rel="noopener noreferrer">RSVP Now</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-amber-900 text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-3xl font-serif mb-4">Diana & Victor</h3>
-          <p className="text-amber-200 mb-4">December 4th, 2025 • Pretoria, South Africa</p>
-          <p className="text-amber-300">We can't wait to celebrate with you!</p>
+      <footer className="footer-editorial py-16">
+        <div className="container mx-auto px-6 text-center">
+          <h3 className="text-4xl font-editorial mb-6 text-white tracking-wide">Diana & Victor</h3>
+          <p className="text-amber-200 mb-4 font-cormorant text-lg tracking-wider uppercase">December 4th, 2025 • Pretoria, South Africa</p>
+          <p className="text-amber-100 font-cormorant text-lg">We can't wait to celebrate with you!</p>
         </div>
       </footer>
     </div>

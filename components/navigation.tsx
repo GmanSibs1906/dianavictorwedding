@@ -11,9 +11,9 @@ export function Navigation() {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/gift-registry", label: "Gift Registry" },
+    { href: "/gift-registry", label: "Registry" },
     { href: "/accommodation", label: "Stay" },
-    { href: "/dress-code", label: "Dress Code" },
+    { href: "/dress-code", label: "Attire" },
     { href: "/faq", label: "FAQ" },
   ]
 
@@ -25,22 +25,22 @@ export function Navigation() {
   }
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-amber-100">
-      <div className="container mx-auto px-4 py-4">
+    <nav className="nav-editorial fixed top-0 w-full z-50">
+      <div className="container mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-serif text-amber-900 hover:text-amber-700 transition-colors">
+          <Link href="/" className="font-editorial text-3xl text-amber-900 hover:text-amber-600 transition-colors duration-300 tracking-wide">
             Diana & Victor
           </Link>
           <div className="hidden md:flex items-center">
-            <div className="flex space-x-8 mr-6">
+            <div className="flex space-x-10 mr-8">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`transition-colors ${
+                  className={`nav-link-editorial transition-colors duration-300 ${
                     isActive(item.href)
-                      ? "text-amber-600 font-semibold border-b-2 border-amber-600 pb-1"
-                      : "text-amber-800 hover:text-amber-600"
+                      ? "text-amber-600 active"
+                      : "text-amber-900 hover:text-amber-600"
                   }`}
                 >
                   {item.label}
@@ -49,15 +49,15 @@ export function Navigation() {
             </div>
             <Button
               asChild
-              className="bg-amber-600 hover:bg-amber-700 text-white font-medium px-6 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+              className="amber-button"
             >
               <a
                 href="https://tally.so/r/w29MBe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1"
+                className="flex items-center gap-2"
               >
-                RSVP <ExternalLink className="h-4 w-4 ml-1" />
+                RSVP <ExternalLink className="h-4 w-4" />
               </a>
             </Button>
           </div>
