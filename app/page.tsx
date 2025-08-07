@@ -123,6 +123,80 @@ export default function HomePage() {
 
       {/* Editorial Divider */}
       <div className="editorial-divider">
+        <span>Cherished Moments</span>
+      </div>
+
+      {/* Beautiful Moments Gallery */}
+      <section className="py-24 bg-amber-50">
+        <div className="magazine-grid container mx-auto px-6">
+          <div className="magazine-content">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-editorial text-amber-900 mb-6 tracking-wide">Captured in Time</h2>
+              <p className="text-xl text-gray-700 font-cormorant max-w-3xl mx-auto">
+                Every picture tells a story, and these moments reflect the beautiful journey that brought us together
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-5 gap-6 mb-16">
+              {/* First Image - Artistic Layout */}
+              <div className="lg:col-span-3">
+                <div className="card-editorial overflow-hidden group hover:shadow-2xl transition-all duration-700">
+                  <div className="relative h-80 lg:h-96 overflow-hidden">
+                    <Image
+                      src="/image4.jpg"
+                      alt="Diana and Victor - Precious Moment"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/40 via-transparent to-amber-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+                      <h3 className="text-white font-editorial text-2xl tracking-wide mb-2">Endless Laughter</h3>
+                      <p className="text-white/90 font-cormorant">Sharing joy in every moment together</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Second Image - Complementary Layout */}
+              <div className="lg:col-span-2">
+                <div className="card-editorial overflow-hidden group hover:shadow-2xl transition-all duration-700">
+                  <div className="relative h-80 lg:h-96 overflow-hidden">
+                    <Image
+                      src="/image5.jpg"
+                      alt="Diana and Victor - Tender Embrace"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-bl from-amber-600/30 via-transparent to-amber-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+                      <h3 className="text-white font-editorial text-xl tracking-wide mb-2">Pure Connection</h3>
+                      <p className="text-white/90 font-cormorant">Hearts united as one</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Elegant Quote Section */}
+            <div className="card-editorial p-12 text-center bg-gradient-to-r from-amber-50 to-white border-2 border-amber-200">
+              <div className="max-w-3xl mx-auto">
+                <div className="mb-6">
+                  <Heart className="w-12 h-12 text-amber-600 mx-auto" />
+                </div>
+                <blockquote className="text-2xl font-cormorant text-amber-900 italic leading-relaxed mb-6">
+                  "Love is not about how many days, months, or years you have been together. 
+                  It's about how much you love each other every single day."
+                </blockquote>
+                <div className="w-24 h-px bg-amber-600 mx-auto mb-4"></div>
+                <p className="text-amber-600 font-editorial tracking-wider uppercase text-sm">Diana & Victor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Editorial Divider */}
+      <div className="editorial-divider">
         <span>The Celebration</span>
       </div>
 
@@ -171,7 +245,7 @@ export default function HomePage() {
                   <div className="flex items-start justify-center gap-3 mt-6">
                     <MapPin className="w-5 h-5 text-amber-600 mt-1" />
                     <div className="text-center">
-                      <p className="font-semibold text-amber-900">De Harte Wedding Venue</p>
+                      <a href="https://maps.app.goo.gl/Bf317asHaH9Pei1V9" className="font-semibold text-amber-900 hover:text-amber-600 transition-colors">De Harte Wedding Venue</a>
                       <p className="text-base">206 Rentia Street</p>
                       <p className="text-base">Onderstepoort, Pretoria, 0110</p>
                     </div>
@@ -222,9 +296,9 @@ export default function HomePage() {
         <div className="magazine-grid container mx-auto px-6">
           <div className="magazine-content">
             <div className="grid md:grid-cols-4 gap-8">
-              <Link href="/accommodation" className="card-editorial p-8 text-center group hover:bg-amber-50 transition-all duration-300">
+              <Link href="/accommodation" className="card-editorial py-8 text-center group hover:bg-amber-50 transition-all duration-300">
                 <MapPin className="w-12 h-12 text-amber-600 mx-auto mb-6 group-hover:scale-110 transition-transform" />
-                <span className="font-cormorant text-lg text-amber-900 uppercase tracking-wider">Accommodation</span>
+                <span className="font-cormorant text-lg text-amber-900 uppercase tracking-wider">Stay</span>
               </Link>
               <Link href="/dress-code" className="card-editorial p-8 text-center group hover:bg-amber-50 transition-all duration-300">
                 <Users className="w-12 h-12 text-amber-600 mx-auto mb-6 group-hover:scale-110 transition-transform" />

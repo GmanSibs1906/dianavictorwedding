@@ -92,63 +92,105 @@ export default function DressCodePage() {
 
       {/* Editorial Divider */}
       <div className="editorial-divider">
-        <span>Our Color Palette</span>
+        <span>Perfect Style Inspiration</span>
       </div>
 
-      {/* Color Palette */}
-      <section className="py-24 g-amber-50">
+      {/* Style Inspiration Section with Our Photos */}
+      <section className="py-24 bg-amber-50">
         <div className="magazine-grid container mx-auto px-6">
           <div className="magazine-content">
             <div className="text-center mb-16">
-              <Palette className="w-16 h-16 text-green-600 mx-auto mb-8" />
-              <h2 className="text-4xl font-editorial text-amber-900 mb-6 tracking-wide">Our Color Palette</h2>
-              <p className="text-xl text-amber-600 font-cormorant">While not required, these colors complement our wedding theme beautifully</p>
+              <h2 className="text-4xl font-editorial text-amber-900 mb-6 tracking-wide">Inspired by Elegance</h2>
+              <p className="text-xl text-gray-700 font-cormorant max-w-3xl mx-auto">
+                See how we embraced sophisticated style - let these moments inspire your wedding day look
+              </p>
             </div>
 
-            <div className="card-editorial p-12 border-green-200">
-              <div className="grid md:grid-cols-3 gap-8 text-center mb-12">
-                <div>
-                  <div className="w-20 h-20 bg-green-600 rounded-full mx-auto mb-4 shadow-md"></div>
-                  <h4 className="font-semibold text-green-800 font-cormorant text-lg uppercase tracking-wider">Forest Green</h4>
-                  <p className="text-green-600 font-cormorant">Our signature color</p>
-                </div>
-                <div>
-                  <div className="w-20 h-20 bg-green-100 rounded-full mx-auto mb-4 shadow-md border-2 border-green-200"></div>
-                  <h4 className="font-semibold text-green-800 font-cormorant text-lg uppercase tracking-wider">Soft Sage</h4>
-                  <p className="text-green-600 font-cormorant">Elegant neutral</p>
-                </div>
-                <div>
-                  <div className="w-20 h-20 bg-green-900 rounded-full mx-auto mb-4 shadow-md"></div>
-                  <h4 className="font-semibold text-green-800 font-cormorant text-lg uppercase tracking-wider">Deep Emerald</h4>
-                  <p className="text-green-600 font-cormorant">Rich accent</p>
+            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+              {/* Sophisticated Evening Look */}
+              <div className="lg:col-span-2">
+                <div className="card-editorial overflow-hidden group">
+                  <div className="relative h-96 lg:h-[500px]">
+                    <Image
+                      src="/image10.jpg"
+                      alt="Diana and Victor - Sophisticated Evening Style"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute bottom-8 left-8 right-8 text-white">
+                      <h3 className="text-3xl font-editorial tracking-wide mb-3 text-shadow-editorial">Evening Elegance</h3>
+                      <p className="text-lg font-cormorant leading-relaxed text-shadow-editorial">
+                        Sophisticated formal wear perfect for our reception celebration. 
+                        Notice the refined textures, elegant silhouettes, and timeless styling.
+                      </p>
+                      <div className="mt-4 flex gap-3 text-sm">
+                        <span className="bg-amber-600/80 px-3 py-1 rounded font-cormorant">Reception Inspiration</span>
+                        <span className="bg-white/20 px-3 py-1 rounded font-cormorant">Formal Elegance</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div className="text-center">
-                <h4 className="font-semibold text-green-800 mb-6 font-cormorant text-lg uppercase tracking-wider">Complementary Colors</h4>
-                <div className="flex justify-center gap-6 flex-wrap">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-rose-300 rounded-full"></div>
-                    <span className="text-green-600 font-cormorant">Blush Pink</span>
+              {/* Classic Formal Look */}
+              <div className="lg:col-span-1">
+                <div className="card-editorial overflow-hidden group">
+                  <div className="relative h-96 lg:h-[500px]">
+                    <Image
+                      src="/image11.jpg"
+                      alt="Diana and Victor - Classic Formal Style"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute bottom-8 left-6 right-6 text-white">
+                      <h3 className="text-2xl font-editorial tracking-wide mb-3 text-shadow-editorial">Classic Grace</h3>
+                      <p className="text-base font-cormorant leading-relaxed text-shadow-editorial">
+                        Timeless formal styling that exemplifies ceremony-appropriate attire with refined elegance.
+                      </p>
+                      <div className="mt-4 flex flex-col gap-2 text-sm">
+                        <span className="bg-amber-600/80 px-3 py-1 rounded font-cormorant text-center">Ceremony Perfect</span>
+                        <span className="bg-white/20 px-3 py-1 rounded font-cormorant text-center">Timeless Style</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-yellow-200 rounded-full"></div>
-                    <span className="text-green-600 font-cormorant">Soft Yellow</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Style Tips from Our Experience */}
+            <div className="card-editorial p-12">
+              <h3 className="text-3xl font-editorial text-amber-900 mb-8 text-center tracking-wide">Style Tips from Our Hearts</h3>
+              <div className="grid md:grid-cols-3 gap-8 text-center">
+                <div className="space-y-4">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto">
+                    <Shirt className="w-8 h-8 text-amber-600" />
                   </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-stone-400 rounded-full"></div>
-                    <span className="text-green-600 font-cormorant">Warm Stone</span>
+                  <h4 className="font-semibold text-amber-800 font-cormorant text-lg uppercase tracking-wider">Comfort First</h4>
+                  <p className="text-gray-700 font-cormorant">Choose styles that make you feel confident and comfortable throughout the day</p>
+                </div>
+                <div className="space-y-4">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto">
+                    <Palette className="w-8 h-8 text-amber-600" />
                   </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-blue-800 rounded-full"></div>
-                    <span className="text-green-600 font-cormorant">Navy Blue</span>
+                  <h4 className="font-semibold text-amber-800 font-cormorant text-lg uppercase tracking-wider">Color Harmony</h4>
+                  <p className="text-gray-700 font-cormorant">While our wedding colors are green, this is absolutely not a requirement. Please wear whatever makes you feel happy and confident!</p>
+                </div>
+                <div className="space-y-4">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto">
+                    <Sun className="w-8 h-8 text-amber-600" />
                   </div>
+                  <h4 className="font-semibold text-amber-800 font-cormorant text-lg uppercase tracking-wider">Season Aware</h4>
+                  <p className="text-gray-700 font-cormorant">December summer weather calls for breathable fabrics and lighter layers</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
 
       {/* Editorial Divider */}
       <div className="editorial-divider">

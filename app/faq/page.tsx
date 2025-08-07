@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card, CardContent } from "@/components/ui/card"
 import { HelpCircle, Clock, MapPin, Phone, Mail, Car, Utensils, Music, Camera, Gift, Heart } from "lucide-react"
 import { Navigation } from "@/components/navigation"
+import Image from "next/image"
 
 export default function FAQPage() {
   return (
@@ -29,7 +30,7 @@ export default function FAQPage() {
         <span>Frequently Asked Questions</span>
       </div>
 
-      {/* FAQ Section */}
+      {/* FAQ Section - Part 1 */}
       <section className="py-24 bg-white">
         <div className="magazine-grid container mx-auto px-6">
           <div className="magazine-content">
@@ -109,7 +110,107 @@ export default function FAQPage() {
                     to join us for dancing and celebration.
                   </AccordionContent>
                 </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Editorial Divider */}
+      <div className="editorial-divider">
+        <span>Creating Beautiful Memories</span>
+      </div>
+
+      {/* Beautiful Memory Section with Images */}
+      <section className="py-24 bg-amber-50">
+        <div className="magazine-grid container mx-auto px-6">
+          <div className="magazine-content">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-editorial text-amber-900 mb-6 tracking-wide">Every Detail Matters</h2>
+              <p className="text-xl text-gray-700 font-cormorant max-w-3xl mx-auto">
+                Just as these precious moments show our attention to every beautiful detail, 
+                we've thoughtfully planned every aspect of our wedding day for you
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              {/* Joyful Moment */}
+              <div className="relative">
+                <div className="card-editorial overflow-hidden group">
+                  <div className="relative h-96 lg:h-[450px]">
+                    <Image
+                      src="/image8.jpg"
+                      alt="Diana and Victor - Joyful Wedding Moment"
+                      fill
+                      className="object-cover object-center group-hover:scale-110 transition-transform duration-1000"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-amber-900/60 via-transparent to-transparent" />
+                    <div className="absolute bottom-8 left-8 right-8 text-white">
+                      <div className="backdrop-blur-sm bg-white/10 p-6 rounded-lg border border-white/20">
+                        <h3 className="text-2xl font-editorial tracking-wide mb-3 text-shadow-editorial">Pure Celebration</h3>
+                        <p className="text-base font-cormorant leading-relaxed text-shadow-editorial">
+                          This is the kind of joy and celebration we want to share with all our loved ones. 
+                          Every moment of our wedding day is designed to create memories that last forever.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Intimate Moment */}
+              <div className="relative">
+                <div className="card-editorial overflow-hidden group">
+                  <div className="relative h-96 lg:h-[450px]">
+                    <Image
+                      src="/image9.jpg"
+                      alt="Diana and Victor - Intimate Wedding Moment"
+                      fill
+                      className="object-cover object-center group-hover:scale-110 transition-transform duration-1000"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-amber-900/60 via-transparent to-transparent" />
+                    <div className="absolute bottom-8 left-8 right-8 text-white">
+                      <div className="backdrop-blur-sm bg-white/10 p-6 rounded-lg border border-white/20">
+                        <h3 className="text-2xl font-editorial tracking-wide mb-3 text-shadow-editorial">Heartfelt Connection</h3>
+                        <p className="text-base font-cormorant leading-relaxed text-shadow-editorial">
+                          The quiet, tender moments are just as important as the grand celebrations. 
+                          We hope our wedding day creates space for both joyful dancing and meaningful connections.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Promise Card */}
+            <div className="card-editorial p-12 text-center bg-gradient-to-r from-white to-amber-50 border-2 border-amber-200">
+              <div className="max-w-2xl mx-auto">
+                <Heart className="w-12 h-12 text-amber-600 mx-auto mb-6" />
+                <h3 className="text-3xl font-editorial text-amber-900 mb-6 tracking-wide">Our Promise to You</h3>
+                <p className="text-lg font-cormorant text-gray-700 leading-relaxed mb-6">
+                  We've planned every detail with love and care, from the ceremony music to the reception cuisine. 
+                  Your comfort and joy are our priorities, and we can't wait to celebrate this milestone 
+                  surrounded by everyone we hold dear.
+                </p>
+                <div className="w-24 h-px bg-amber-600 mx-auto"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Editorial Divider */}
+      <div className="editorial-divider">
+        <span>More Questions & Answers</span>
+      </div>
+
+      {/* FAQ Section - Part 2 */}
+      <section className="py-24 bg-white">
+        <div className="magazine-grid container mx-auto px-6">
+          <div className="magazine-content">
+            <div className="card-editorial p-12">
+              <Accordion type="single" collapsible className="w-full space-y-6">
                 <AccordionItem value="item-7" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
                     <div className="flex items-center gap-3">
@@ -195,14 +296,14 @@ export default function FAQPage() {
 
       {/* Editorial Divider */}
       <div className="editorial-divider">
-        <span>Additional Information</span>
+        <span>Still have Questions ?</span>
       </div>
 
       {/* Additional Info */}
       <section className="py-24 bg-amber-50">
         <div className="magazine-grid container mx-auto px-6">
           <div className="magazine-content">
-            <div className="grid md:grid-cols-2 gap-12">
+            {/* <div className="grid md:grid-cols-2 gap-12">
               <div className="card-editorial p-10">
                 <h3 className="text-2xl font-editorial text-amber-900 mb-6 tracking-wide">Weather & Comfort</h3>
                 <ul className="space-y-4 text-gray-700 font-cormorant text-lg">
@@ -224,7 +325,7 @@ export default function FAQPage() {
                   <li>• Designated driver services recommended</li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             <div className="card-editorial p-12 mt-12 text-center">
               <h3 className="text-3xl font-editorial text-amber-900 mb-6 tracking-wide">Still Have Questions?</h3>

@@ -5,7 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Gift, ExternalLink, Heart, MapPin, Phone, Mail, Home, CreditCard, Copy, CheckCircle, X, Banknote, DollarSign } from "lucide-react"
+import { Gift, ExternalLink, Heart, MapPin, Phone, Mail, Home, CreditCard, Copy, CheckCircle, X, Banknote, DollarSign, Calendar } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 
 export default function GiftRegistryPage() {
@@ -13,7 +13,7 @@ export default function GiftRegistryPage() {
   const [copiedField, setCopiedField] = useState<string | null>(null)
 
   const bankingDetails = {
-    accountName: "Diana Mawoko/Victor Sitanimexi",
+    accountName: "Diana Mawoko/Victor Sitanimezi",
     bankName: "Standard Bank",
     branch: "Centurion Lifestyle",
     branchCode: "2645",
@@ -62,17 +62,17 @@ export default function GiftRegistryPage() {
               {/* Le Creuset */}
               <div className="card-editorial hover:bg-amber-50 transition-all duration-300">
                 <div className="text-center p-8">
-                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Home className="w-8 h-8 text-orange-600" />
+                  <div className=" flex items-center justify-center mx-auto mb-6">
+                    <Image src="https://www.waterfront.co.za/wp-content/uploads/2018/05/le-creuset.jpg" alt="Le Creuset" width={100} height={100} />
                   </div>
                   <h3 className="text-2xl font-editorial text-amber-900 mb-3 tracking-wide">Le Creuset</h3>
                   <p className="text-amber-600 font-cormorant text-base font-semibold uppercase tracking-wider mb-6">Premium Cookware & Kitchen Essentials</p>
                 </div>
                 <div className="px-8 pb-8 space-y-6">
-                  <p className="text-gray-700 text-base font-cormorant leading-relaxed">
+                  <p className="text-gray-700 text-base font-cormorant leading-relaxed mb-[90px]">
                     Discover our selection of high-quality cookware, bakeware, and kitchen accessories from the renowned French brand Le Creuset.
                   </p>
-                  <div className="space-y-3">
+                  {/* <div className="space-y-3">
                     <p className="font-semibold text-amber-900 font-cormorant uppercase tracking-wider">Featured Items:</p>
                     <ul className="text-sm text-gray-600 space-y-2 font-cormorant">
                       <li>• Cast iron cookware sets</li>
@@ -80,7 +80,7 @@ export default function GiftRegistryPage() {
                       <li>• Stoneware baking dishes</li>
                       <li>• Kitchen tools and accessories</li>
                     </ul>
-                  </div>
+                  </div> */}
                   <Button asChild className="amber-button w-full">
                     <Link href="https://www.lecreuset.co.za/gift-registry.html?mrrid=4929886" target="_blank" rel="noopener noreferrer">
                       View Registry <ExternalLink className="w-4 h-4 ml-2" />
@@ -92,17 +92,17 @@ export default function GiftRegistryPage() {
               {/* Yuppiechef */}
               <div className="card-editorial hover:bg-amber-50 transition-all duration-300">
                 <div className="text-center p-8">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Home className="w-8 h-8 text-green-600" />
+                <div className=" flex items-center justify-center mx-auto mb-6">
+                    <Image src="https://upload.wikimedia.org/wikipedia/en/e/e1/Yuppiechef_Logo.png" alt="Le Creuset" width={70} height={70} />
                   </div>
                   <h3 className="text-2xl font-editorial text-amber-900 mb-3 tracking-wide">Yuppiechef</h3>
                   <p className="text-amber-600 font-cormorant text-base font-semibold uppercase tracking-wider mb-6">Kitchen & Home Appliances</p>
                 </div>
                 <div className="px-8 pb-8 space-y-6">
-                  <p className="text-gray-700 text-base font-cormorant leading-relaxed">
+                  <p className="text-gray-700 text-base font-cormorant leading-relaxed mb-[90px]">
                     Find everything you need for the modern kitchen and home, from small appliances to gourmet ingredients and homeware.
                   </p>
-                  <div className="space-y-3">
+                  {/* <div className="space-y-3">
                     <p className="font-semibold text-amber-900 font-cormorant uppercase tracking-wider">Featured Items:</p>
                     <ul className="text-sm text-gray-600 space-y-2 font-cormorant">
                       <li>• Kitchen appliances and gadgets</li>
@@ -110,7 +110,7 @@ export default function GiftRegistryPage() {
                       <li>• Cookware and bakeware</li>
                       <li>• Home and lifestyle products</li>
                     </ul>
-                  </div>
+                  </div> */}
                   <Button asChild className="amber-button w-full">
                     <Link href="http://www.yuppiechef.com/yc8796034" target="_blank" rel="noopener noreferrer">
                       View Registry <ExternalLink className="w-4 h-4 ml-2" />
@@ -122,8 +122,8 @@ export default function GiftRegistryPage() {
               {/* Mr Price Home */}
               <div className="card-editorial hover:bg-amber-50 transition-all duration-300">
                 <div className="text-center p-8">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Home className="w-8 h-8 text-blue-600" />
+                <div className=" flex items-center justify-center mx-auto mb-6">
+                    <Image src="https://cdn.hyprop.co.za/image/2021/7/21/32def642-3923-4b37-a5ff-fd70a96216ff/abb6c1dd-c66a-4359-94d5-90ca92fe21ac.jpg" alt="Le Creuset" width={120} height={120} />
                   </div>
                   <h3 className="text-2xl font-editorial text-amber-900 mb-3 tracking-wide">Mr Price Home</h3>
                   <p className="text-amber-600 font-cormorant text-base font-semibold uppercase tracking-wider mb-6">Home Decor & Essentials</p>
@@ -132,7 +132,7 @@ export default function GiftRegistryPage() {
                   <p className="text-gray-700 text-base font-cormorant leading-relaxed">
                     Stylish and affordable home decor, furniture, and household essentials to help us create our perfect home together.
                   </p>
-                  <div className="space-y-3">
+                  {/* <div className="space-y-3">
                     <p className="font-semibold text-amber-900 font-cormorant uppercase tracking-wider">Featured Items:</p>
                     <ul className="text-sm text-gray-600 space-y-2 font-cormorant">
                       <li>• Home decor and accessories</li>
@@ -140,7 +140,7 @@ export default function GiftRegistryPage() {
                       <li>• Kitchen and dining items</li>
                       <li>• Storage solutions</li>
                     </ul>
-                  </div>
+                  </div> */}
                   <div className="space-y-3">
                     <p className="font-semibold text-amber-900 text-sm font-cormorant uppercase tracking-wider">Registry ID:</p>
                     <p className="text-amber-600 font-mono text-base bg-amber-50 p-2 rounded border">DWWEDD4381</p>
@@ -165,53 +165,6 @@ export default function GiftRegistryPage() {
 
             {/* Banking Details Grid - 2x2 */}
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* Account Information */}
-              <div className="card-editorial p-8 hover:bg-amber-50 transition-all duration-300">
-                <div className="text-center mb-6">
-                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <CreditCard className="w-8 h-8 text-amber-600" />
-                  </div>
-                  <h3 className="text-xl font-editorial text-amber-900 mb-2 tracking-wide">Account Details</h3>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center p-3 bg-amber-50 rounded">
-                    <div>
-                      <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold">Account Name</p>
-                      <p className="text-sm font-cormorant text-gray-900">{bankingDetails.accountName}</p>
-                    </div>
-                    <button
-                      onClick={() => copyToClipboard(bankingDetails.accountName, 'accountName')}
-                      className="p-2 text-amber-600 hover:text-amber-800 transition-colors"
-                    >
-                      {copiedField === 'accountName' ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                    </button>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-amber-100 rounded border border-amber-200">
-                    <div>
-                      <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold">Account Number</p>
-                      <p className="text-lg font-mono text-gray-900 font-semibold">{bankingDetails.accountNumber}</p>
-                    </div>
-                    <button
-                      onClick={() => copyToClipboard(bankingDetails.accountNumber, 'accountNumber')}
-                      className="p-2 text-amber-600 hover:text-amber-800 transition-colors"
-                    >
-                      {copiedField === 'accountNumber' ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                    </button>
-                  </div>
-                  <div className="flex justify-between items-center p-3 bg-amber-50 rounded">
-                    <div>
-                      <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold">Account Type</p>
-                      <p className="text-sm font-cormorant text-gray-900">{bankingDetails.accountType}</p>
-                    </div>
-                    <button
-                      onClick={() => copyToClipboard(bankingDetails.accountType, 'accountType')}
-                      className="p-2 text-amber-600 hover:text-amber-800 transition-colors"
-                    >
-                      {copiedField === 'accountType' ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                    </button>
-                  </div>
-                </div>
-              </div>
 
               {/* Bank Information */}
               <div className="card-editorial p-8 hover:bg-amber-50 transition-all duration-300">
@@ -246,11 +199,11 @@ export default function GiftRegistryPage() {
                       {copiedField === 'branch' ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
                     </button>
                   </div>
-                  <div className="flex justify-between items-center p-3 bg-amber-100 rounded border border-amber-200">
-                    <div>
-                      <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold">Branch Code</p>
-                      <p className="text-lg font-mono text-gray-900 font-semibold">{bankingDetails.branchCode}</p>
-                    </div>
+                                            <div className="flex justify-between items-center p-3 bg-amber-50 rounded">
+                            <div>
+                              <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold">Branch Code</p>
+                              <p className="text-sm font-cormorant text-gray-900">{bankingDetails.branchCode}</p>
+                            </div>
                     <button
                       onClick={() => copyToClipboard(bankingDetails.branchCode, 'branchCode')}
                       className="p-2 text-amber-600 hover:text-amber-800 transition-colors"
@@ -260,6 +213,57 @@ export default function GiftRegistryPage() {
                   </div>
                 </div>
               </div>
+
+
+              {/* Account Information */}
+              <div className="card-editorial p-8 hover:bg-amber-50 transition-all duration-300">
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CreditCard className="w-8 h-8 text-amber-600" />
+                  </div>
+                  <h3 className="text-xl font-editorial text-amber-900 mb-2 tracking-wide">Account Details</h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center p-3 bg-amber-50 rounded">
+                    <div>
+                      <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold">Account Name</p>
+                      <p className="text-sm font-cormorant text-gray-900">{bankingDetails.accountName}</p>
+                    </div>
+                    <button
+                      onClick={() => copyToClipboard(bankingDetails.accountName, 'accountName')}
+                      className="p-2 text-amber-600 hover:text-amber-800 transition-colors"
+                    >
+                      {copiedField === 'accountName' ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                    </button>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-amber-50 rounded">
+                    <div>
+                      <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold">Account Number</p>
+                      <p className="text-sm font-cormorant text-gray-900">{bankingDetails.accountNumber}</p>
+                    </div>
+                    <button
+                      onClick={() => copyToClipboard(bankingDetails.accountNumber, 'accountNumber')}
+                      className="p-2 text-amber-600 hover:text-amber-800 transition-colors"
+                    >
+                      {copiedField === 'accountNumber' ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                    </button>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-amber-50 rounded">
+                    <div>
+                      <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold">Account Type</p>
+                      <p className="text-sm font-cormorant text-gray-900">{bankingDetails.accountType}</p>
+                    </div>
+                    <button
+                      onClick={() => copyToClipboard(bankingDetails.accountType, 'accountType')}
+                      className="p-2 text-amber-600 hover:text-amber-800 transition-colors"
+                    >
+                      {copiedField === 'accountType' ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              
 
               {/* Payment Reference */}
               <div className="card-editorial p-8 hover:bg-amber-50 transition-all duration-300">
@@ -272,42 +276,21 @@ export default function GiftRegistryPage() {
                 <div className="space-y-4">
                   <div className="p-4 bg-amber-50 rounded text-center">
                     <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold mb-2">Suggested Reference</p>
-                    <p className="text-base font-cormorant text-gray-900 font-semibold">"Diana & Victor Wedding Gift"</p>
+                    <p className="text-base font-cormorant text-gray-900 font-semibold">Your name and surname</p>
                   </div>
-                  <div className="p-4 bg-amber-50 rounded text-center">
-                    <p className="text-xs font-cormorant uppercase tracking-wider text-amber-800 font-semibold mb-2">Or Include</p>
-                    <p className="text-sm font-cormorant text-gray-700">Your name for identification</p>
-                  </div>
-                  <button
-                    onClick={() => copyToClipboard("Diana & Victor Wedding Gift", 'reference')}
-                    className="w-full p-3 bg-amber-600 text-white rounded hover:bg-amber-700 transition-colors flex items-center justify-center gap-2"
-                  >
-                    {copiedField === 'reference' ? <CheckCircle className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                    <span className="font-cormorant">Copy Reference</span>
-                  </button>
+                  
                 </div>
               </div>
 
-              {/* Thank You Note */}
-              <div className="card-editorial p-8 hover:bg-amber-50 transition-all duration-300">
-                <div className="text-center mb-6">
-                  <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="w-8 h-8 text-rose-600" />
-                  </div>
-                  <h3 className="text-xl font-editorial text-amber-900 mb-2 tracking-wide">Gratitude Note</h3>
-                </div>
-                <div className="space-y-4 text-center">
-                  <p className="text-gray-700 font-cormorant text-base leading-relaxed">
-                    Your generous contribution will help us start our married life together and create our perfect home.
-                  </p>
-                  <div className="p-4 bg-amber-50 rounded">
-                    <p className="text-amber-800 font-cormorant text-sm font-semibold">
-                      Every gift, large or small, means the world to us! 💝
-                    </p>
-                  </div>
-                  <p className="text-xs text-gray-600 font-cormorant italic">
-                    Thank you notes will be sent within three months of our wedding day
-                  </p>
+              {/* Thank You Image */}
+              <div className="card-editorial overflow-hidden hover:bg-amber-50 transition-all duration-300">
+                <div className="relative h-80">
+                  <Image
+                    src="/image1.jpg"
+                    alt="Diana and Victor - Thank You"
+                    fill
+                    className="object-cover object-center"
+                  />
                 </div>
               </div>
             </div>
@@ -317,43 +300,81 @@ export default function GiftRegistryPage() {
 
       {/* Editorial Divider */}
       <div className="editorial-divider">
-        <span>Honeymoon Contributions</span>
+        <span>Our Journey Together</span>
       </div>
 
-      {/* Honeymoon Fund */}
+      {/* Image Gallery Section */}
       <section className="py-24 bg-amber-50">
         <div className="magazine-grid container mx-auto px-6">
           <div className="magazine-content">
             <div className="text-center mb-16">
               <Heart className="w-16 h-16 text-amber-600 mx-auto mb-8" />
-              <h2 className="text-4xl font-editorial text-amber-900 mb-6 tracking-wide">Honeymoon Fund</h2>
-              <p className="text-xl text-gray-700 font-cormorant">Help us create magical memories in Mauritius & Rodrigues Island</p>
+              <h2 className="text-4xl font-editorial text-amber-900 mb-6 tracking-wide">Celebrating Our Love</h2>
+              <p className="text-xl text-gray-700 font-cormorant">Moments that capture the essence of our beautiful journey together</p>
             </div>
 
-            <div className="card-editorial mb-16 overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-80 md:h-auto">
-                  <Image
-                    src="https://blog.pentravel.co.za/wp-content/uploads/2022/06/NORTH.jpg"
-                    alt="Beautiful Mauritius beach destination"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-12 flex items-center">
-                  <div className="space-y-6">
-                    <h3 className="text-3xl font-editorial text-amber-900 tracking-wide">Our Dream Destination</h3>
-                    <p className="text-gray-700 font-cormorant text-lg leading-relaxed">
-                      We're planning a romantic honeymoon to the beautiful islands of Mauritius and Rodrigues. Your
-                      contribution will help us create unforgettable memories as we begin our married life together.
-                    </p>
-                    <Button 
-                      onClick={() => setShowBankingDetails(true)}
-                      className="amber-button"
-                    >
-                      Contribute to Honeymoon <CreditCard className="w-4 h-4 ml-2" />
-                    </Button>
+            {/* Creative Image Layout */}
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* First Image - Larger showcase */}
+              <div className="lg:col-span-2">
+                <div className="card-editorial overflow-hidden hover:scale-[1.02] transition-all duration-500">
+                  <div className="relative h-96 lg:h-[500px]">
+                    <Image
+                      src="/image2.jpg"
+                      alt="Diana and Victor - Beautiful Moment"
+                      fill
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <h3 className="text-2xl font-editorial tracking-wide text-shadow-editorial">Pure Joy</h3>
+                      <p className="text-sm font-cormorant opacity-90 text-shadow-editorial">Captured in this perfect moment</p>
+                    </div>
                   </div>
+                </div>
+              </div>
+
+              {/* Second Image - Portrait style */}
+              <div className="lg:col-span-1">
+                <div className="card-editorial overflow-hidden hover:scale-[1.02] transition-all duration-500">
+                  <div className="relative h-96 lg:h-[500px]">
+                    <Image
+                      src="/image3.jpg"
+                      alt="Diana and Victor - Elegant Portrait"
+                      fill
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <h3 className="text-2xl font-editorial tracking-wide text-shadow-editorial">Elegant Love</h3>
+                      <p className="text-sm font-cormorant opacity-90 text-shadow-editorial">Timeless and sophisticated</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Elegant Call to Action */}
+            <div className="mt-16 text-center">
+              <div className="card-editorial p-12 max-w-3xl mx-auto">
+                <h3 className="text-3xl font-editorial text-amber-900 mb-6 tracking-wide">Join Our Celebration</h3>
+                <p className="text-gray-700 font-cormorant text-lg leading-relaxed mb-8">
+                  These moments represent the love and joy we want to share with all our cherished family and friends. 
+                  Your presence at our wedding will make our special day even more meaningful and complete.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <Button 
+                    onClick={() => setShowBankingDetails(true)}
+                    className="amber-button"
+                  >
+                    Contribute to Our Journey <Heart className="w-4 h-4 ml-2" />
+                  </Button>
+                  <span className="text-gray-500 font-cormorant text-sm">or</span>
+                  <Button asChild className="amber-button-outline">
+                    <Link href="/rsvp">
+                      RSVP to Our Wedding <Calendar className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -373,7 +394,7 @@ export default function GiftRegistryPage() {
                     <div className="text-center mb-8">
                       <CreditCard className="w-16 h-16 text-amber-600 mx-auto mb-6" />
                       <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">Banking Details</h3>
-                      <p className="text-lg text-gray-700 font-cormorant">For your generous contributions to our honeymoon fund</p>
+                      <p className="text-lg text-gray-700 font-cormorant">For your generous contributions</p>
                     </div>
 
                     <div className="card-editorial p-8 space-y-6">
@@ -421,7 +442,7 @@ export default function GiftRegistryPage() {
                           <div className="flex justify-between items-center p-4 bg-amber-50 rounded-lg">
                             <div>
                               <p className="text-sm font-cormorant uppercase tracking-wider text-amber-800 font-semibold">Branch Code</p>
-                              <p className="text-lg font-mono text-gray-900">{bankingDetails.branchCode}</p>
+                              <p className="text-lg font-cormorant text-gray-900">{bankingDetails.branchCode}</p>
                             </div>
                             <button
                               onClick={() => copyToClipboard(bankingDetails.branchCode, 'branchCode')}
@@ -479,45 +500,6 @@ export default function GiftRegistryPage() {
                 </div>
               </div>
             )}
-
-            {/* Honeymoon Experiences */}
-            {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="card-editorial p-8 text-center hover:bg-white transition-all duration-300">
-                <h4 className="font-cormorant font-semibold text-amber-900 mb-3 text-lg uppercase tracking-wider">Romantic Sunset Dinner</h4>
-                <p className="text-3xl font-editorial text-amber-600 mb-3">R2,500</p>
-                <p className="text-sm text-gray-600 font-cormorant">Private beachside dining experience</p>
-              </div>
-
-              <div className="card-editorial p-8 text-center hover:bg-white transition-all duration-300">
-                <h4 className="font-cormorant font-semibold text-amber-900 mb-3 text-lg uppercase tracking-wider">Catamaran Cruise</h4>
-                <p className="text-3xl font-editorial text-amber-600 mb-3">R3,200</p>
-                <p className="text-sm text-gray-600 font-cormorant">Full day sailing adventure</p>
-              </div>
-
-              <div className="card-editorial p-8 text-center hover:bg-white transition-all duration-300">
-                <h4 className="font-cormorant font-semibold text-amber-900 mb-3 text-lg uppercase tracking-wider">Couples Spa Day</h4>
-                <p className="text-3xl font-editorial text-amber-600 mb-3">R4,500</p>
-                <p className="text-sm text-gray-600 font-cormorant">Relaxing spa treatments for two</p>
-              </div>
-
-              <div className="card-editorial p-8 text-center hover:bg-white transition-all duration-300">
-                <h4 className="font-cormorant font-semibold text-amber-900 mb-3 text-lg uppercase tracking-wider">Island Hopping Adventure</h4>
-                <p className="text-3xl font-editorial text-amber-600 mb-3">R6,000</p>
-                <p className="text-sm text-gray-600 font-cormorant">Explore multiple islands</p>
-              </div>
-
-              <div className="card-editorial p-8 text-center hover:bg-white transition-all duration-300">
-                <h4 className="font-cormorant font-semibold text-amber-900 mb-3 text-lg uppercase tracking-wider">Underwater Sea Walk</h4>
-                <p className="text-3xl font-editorial text-amber-600 mb-3">R2,800</p>
-                <p className="text-sm text-gray-600 font-cormorant">Unique underwater experience</p>
-              </div>
-
-              <div className="card-editorial p-8 text-center hover:bg-white transition-all duration-300">
-                <h4 className="font-cormorant font-semibold text-amber-900 mb-3 text-lg uppercase tracking-wider">Any Amount</h4>
-                <p className="text-3xl font-editorial text-amber-600 mb-3">R???</p>
-                <p className="text-sm text-gray-600 font-cormorant">Every contribution is appreciated</p>
-              </div>
-            </div>*/}
           </div>
         </div>
       </section>
@@ -536,8 +518,8 @@ export default function GiftRegistryPage() {
                 <h3 className="text-2xl font-editorial text-amber-900 mb-6 tracking-wide">Gift Preferences</h3>
                 <ul className="space-y-4 text-gray-700 font-cormorant text-lg">
                   <li>• We appreciate gifts from our registries, but any thoughtful gift is welcome</li>
-                  <li>• Traditional South African items and cultural pieces are especially meaningful</li>
-                  <li>• Handmade or personalized gifts hold special value to us</li>
+                  {/* <li>• Traditional South African items and cultural pieces are especially meaningful</li> */}
+                  {/* <li>• Handmade or personalized gifts hold special value to us</li> */}
                   <li>• If you prefer to give cash, it will go toward our new home</li>
                 </ul>
               </div>
