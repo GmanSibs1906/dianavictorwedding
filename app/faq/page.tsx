@@ -207,11 +207,11 @@ export default function FAQPage() {
                       fill
                       className="object-cover object-center group-hover:scale-110 transition-transform duration-1000"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-amber-900/60 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                     <div className="absolute bottom-8 left-8 right-8 text-white">
-                      <div className="backdrop-blur-sm bg-white/10 p-6 rounded-lg border border-white/20">
-                        <h3 className="text-2xl font-editorial tracking-wide mb-3 text-shadow-editorial">Pure Celebration</h3>
-                        <p className="text-base font-cormorant leading-relaxed text-shadow-editorial">
+                      <div className="backdrop-blur-sm bg-black/40 p-6 rounded-lg border border-white/30">
+                        <h3 className="text-2xl font-editorial tracking-wide mb-3 text-white drop-shadow-lg">Pure Celebration</h3>
+                        <p className="text-base font-cormorant leading-relaxed text-white drop-shadow-lg">
                           This is the kind of joy and celebration we want to share with all our loved ones. 
                           Every moment of our wedding day is designed to create memories that last forever.
                         </p>
@@ -231,11 +231,11 @@ export default function FAQPage() {
                       fill
                       className="object-cover object-center group-hover:scale-110 transition-transform duration-1000"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-amber-900/60 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                     <div className="absolute bottom-8 left-8 right-8 text-white">
-                      <div className="backdrop-blur-sm bg-white/10 p-6 rounded-lg border border-white/20">
-                        <h3 className="text-2xl font-editorial tracking-wide mb-3 text-shadow-editorial">Heartfelt Connection</h3>
-                        <p className="text-base font-cormorant leading-relaxed text-shadow-editorial">
+                      <div className="backdrop-blur-sm bg-black/40 p-6 rounded-lg border border-white/30">
+                        <h3 className="text-2xl font-editorial tracking-wide mb-3 text-white drop-shadow-lg">Heartfelt Connection</h3>
+                        <p className="text-base font-cormorant leading-relaxed text-white drop-shadow-lg">
                           The quiet, tender moments are just as important as the grand celebrations. 
                           We hope our wedding day creates space for both joyful dancing and meaningful connections.
                         </p>
