@@ -17,8 +17,7 @@ export default function AccommodationPage() {
             <MapPin className="w-16 h-16 text-amber-600 mx-auto mb-8" />
             <h1 className="text-6xl md:text-8xl font-editorial text-amber-900 mb-8 tracking-wide">Where to Stay</h1>
             <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-cormorant">
-              We've curated these exceptional accommodations near our wedding venues. Each offers distinctive character 
-              and superior service for our celebration.
+            For guests who prefer not to travel late at night, we have compiled a list of nearby accommodations for your convenience. Kindly note that all reservations and related expenses will be at your own cost.
             </p>
           </div>
         </div>

@@ -260,7 +260,7 @@ export default function HomePage() {
           <div className="magazine-content">
             <div className="grid md:grid-cols-2 gap-12">
               {/* Ceremony Card */}
-              <div className="card-editorial p-10 text-center">
+              {/* <div className="card-editorial p-10 text-center">
                 <Church className="w-16 h-16 text-amber-600 mx-auto mb-8" />
                 <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">Holy Ceremony</h3>
                 <div className="space-y-6 text-gray-700 font-cormorant">
@@ -281,10 +281,10 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Reception Card */}
-              <div className="card-editorial p-10 text-center">
+              {/* <div className="card-editorial p-10 text-center">
                 <Heart className="w-16 h-16 text-amber-600 mx-auto mb-8" />
                 <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">Reception Celebration</h3>
                 <div className="space-y-6 text-gray-700 font-cormorant">
@@ -305,7 +305,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Family Introduction */}

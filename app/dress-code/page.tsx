@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Shirt, Sun, Moon, Palette, Info } from "lucide-react"
+import { Crown, Palette, Info } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 
 export default function DressCodePage() {
@@ -12,7 +12,7 @@ export default function DressCodePage() {
       <section className="pt-32 pb-20 bg-amber-50">
         <div className="magazine-grid container mx-auto px-6">
           <div className="magazine-content text-center">
-            <Shirt className="w-16 h-16 text-amber-600 mx-auto mb-8" />
+            <Crown className="w-16 h-16 text-amber-600 mx-auto mb-8" />
             <h1 className="text-6xl md:text-8xl font-editorial text-amber-900 mb-8 tracking-wide">Dress Code</h1>
             <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-cormorant">
               We want you to feel comfortable and look your best as we celebrate together. Here's our guide to help you
@@ -32,20 +32,12 @@ export default function DressCodePage() {
         <div className="magazine-grid container mx-auto px-6">
           <div className="magazine-content">
             <div className="card-editorial p-12 text-center max-w-3xl mx-auto">
-              <Shirt className="w-16 h-16 text-amber-600 mx-auto mb-8" />
+              <Crown className="w-16 h-16 text-amber-600 mx-auto mb-8" />
               <h3 className="text-4xl font-editorial text-amber-900 mb-8 tracking-wide">Formal / Black Tie</h3>
               
-              <div className="space-y-8">
-                <div>
-                  <h4 className="text-2xl font-editorial text-amber-800 mb-4 tracking-wide">Recommended Colors</h4>
-                  <p className="text-xl text-gray-700 font-cormorant">Shades of green and tan</p>
-                </div>
-
-                <div className="border-t border-amber-200 pt-8">
-                  <h4 className="text-2xl font-editorial text-amber-800 mb-4 tracking-wide">Please Avoid</h4>
-                  <p className="text-xl text-gray-700 font-cormorant">White, ivory, or cream</p>
-                </div>
-              </div>
+              <p className="text-xl text-gray-700 font-cormorant leading-relaxed">
+                We invite you to join us in elegant formal attire. Think sophisticated evening wear that reflects the significance and joy of our celebration.
+              </p>
             </div>
           </div>
         </div>
@@ -64,9 +56,24 @@ export default function DressCodePage() {
             <div className="card-editorial p-12 text-center max-w-3xl mx-auto">
               <Palette className="w-16 h-16 text-amber-600 mx-auto mb-8" />
               <h3 className="text-4xl font-editorial text-amber-900 mb-8 tracking-wide">A Note About Colors</h3>
-              <p className="text-xl text-gray-700 font-cormorant leading-relaxed">
-                While our wedding colors are green, this is absolutely not a requirement. Please wear whatever makes you feel happy and confident!
-              </p>
+              
+              <div className="space-y-8">
+                <div>
+                  <h4 className="text-2xl font-editorial text-amber-800 mb-4 tracking-wide">Recommended Colors</h4>
+                  <p className="text-xl text-gray-700 font-cormorant">Shades of green and tan beautifully complement our celebration</p>
+                </div>
+
+                <div className="border-t border-amber-200 pt-8">
+                  <h4 className="text-2xl font-editorial text-amber-800 mb-4 tracking-wide">Please Kindly Avoid</h4>
+                  <p className="text-xl text-gray-700 font-cormorant">White, ivory, or cream (reserved for the bride)</p>
+                </div>
+
+                <div className="border-t border-amber-200 pt-8">
+                  <p className="text-xl text-gray-700 font-cormorant leading-relaxed italic">
+                    While our wedding colors are green, this is absolutely not a requirement. Please wear whatever makes you feel happy and confident!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
