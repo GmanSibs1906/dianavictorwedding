@@ -60,7 +60,7 @@ export default function FAQPage() {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-3" className="border-amber-200">
+                {/* <AccordionItem value="item-3" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
                     <div className="flex items-center gap-3">
                       <Shirt className="w-5 h-5 text-amber-600" />
@@ -71,7 +71,7 @@ export default function FAQPage() {
                     The dress code is formal/black tie. We recommend elegant attire in shades of green and tan. 
                     Please avoid white, ivory, or cream colors. Your presence is the most important thing to us, so please dress in a way that makes you feel comfortable and confident.
                   </AccordionContent>
-                </AccordionItem>
+                </AccordionItem> */}
 
                 <AccordionItem value="item-4" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
@@ -93,12 +93,11 @@ export default function FAQPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    Transportation will not be provided between the ceremony and reception venues. The venues are 
-                    approximately 15 minutes apart by car. If you need help with transport, please contact us directly.
+                  No, venues are 30 minutes apart
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-6" className="border-amber-200">
+                {/* <AccordionItem value="item-6" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
                     <div className="flex items-center gap-3">
                       <Utensils className="w-5 h-5 text-amber-600" />
@@ -108,9 +107,9 @@ export default function FAQPage() {
                   <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
                     Our culinary selection features a blend of South African, Congolese, and Zambian cuisines, complemented by a variety of international options. We are also pleased to accommodate any dietary needs upon request.
                   </AccordionContent>
-                </AccordionItem>
+                </AccordionItem> */}
 
-                <AccordionItem value="item-7" className="border-amber-200">
+                {/* <AccordionItem value="item-7" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
                     <div className="flex items-center gap-3">
                       <Gift className="w-5 h-5 text-amber-600" />
@@ -120,7 +119,7 @@ export default function FAQPage() {
                   <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
                     We have a gift registry and also welcome cash contributions. Your presence at our wedding is truly the greatest gift we could ask for, but any additional gifts you choose to give will be treasured as we build our life together.
                   </AccordionContent>
-                </AccordionItem>
+                </AccordionItem> */}
 
                 <AccordionItem value="item-8" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
@@ -142,7 +141,7 @@ export default function FAQPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    A bar will be available, offering complimentary soft drinks, juices, beer, and wines. Hard liquor will be available for purchase.
+                  A complimentary selection of soft drinks, juices, beer, and wine will be available. Spirits and cocktails will be available for purchase.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -154,13 +153,11 @@ export default function FAQPage() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    Yes, children are welcome at both the ceremony and reception! We ask that parents ensure
-                    their little ones are supervised during the ceremony. The reception venue has some space
-                    where children can play if needed.
+                  We regret no children.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-11" className="border-amber-200">
+                {/* <AccordionItem value="item-11" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
                     <div className="flex items-center gap-3">
                       <Phone className="w-5 h-5 text-amber-600" />
@@ -172,7 +169,7 @@ export default function FAQPage() {
                     questions or concerns. You can reach her at +27 79 246 8279. For any last-minute changes
                     or emergencies, this is your best contact number.
                   </AccordionContent>
-                </AccordionItem>
+                </AccordionItem> */}
               </Accordion>
             </div>
           </div>
