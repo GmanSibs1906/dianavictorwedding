@@ -1,11 +1,16 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Calendar, MapPin, Heart, Users, HelpCircle, Clock, Church, Gift } from "lucide-react"
+import { Calendar, MapPin, Heart, Users, HelpCircle, Clock, Church, Gift, ChevronDown, ChevronUp } from "lucide-react"
 import { Navigation } from "@/components/navigation"
+import { useState } from "react"
 
 export default function HomePage() {
+  const [isStoryExpanded, setIsStoryExpanded] = useState(false)
+  
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -44,9 +49,7 @@ export default function HomePage() {
           <h1 className=" md:hidden hero-title-editorial text-shadow-editorial">
             Diana & Victor
           </h1>
-          <p className=" md:hidden hero-subtitle-editorial">
-            An Editorial Wedding
-          </p>
+
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-lg mb-12">
             <div className="flex items-center gap-3 bg-white/15 backdrop-blur-sm rounded-none px-8 py-4 border border-white/20">
               <Calendar className="w-6 h-6" />
@@ -67,57 +70,107 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Editorial Divider */}
-      <div className="editorial-divider">
-        <span>Our Story</span>
-      </div>
-
-      {/* Our Story Section */}
-      <section className="py-24 bg-white">
-        <div className="magazine-grid container mx-auto px-6">
-          <div className="magazine-content">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div className="animate-slide-editorial">
-                <Image
-                  src="/page1.jpg"
-                  alt="Diana and Victor"
-                  width={600}
-                  height={800}
-                  className="w-full h-auto shadow-lg"
-                />
+      {/* Wedding Details Section */}
+      <section className="py-16 bg-amber-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-editorial text-amber-900 mb-6 tracking-wide">Join Us in Celebration</h2>
+            <div className="w-24 h-px bg-amber-600 mx-auto mb-8"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Ceremony Details */}
+            <div className="card-editorial p-8 text-center bg-white">
+              <Church className="w-12 h-12 text-amber-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-editorial text-amber-900 mb-4 tracking-wide">Ceremony</h3>
+              <div className="space-y-3 text-gray-700 font-cormorant text-lg">
+                <div className="flex items-center justify-center gap-2">
+                  <Clock className="w-5 h-5 text-amber-600" />
+                  <span>12:00 PM</span>
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <MapPin className="w-5 h-5 text-amber-600" />
+                  <span>Sacred Heart Cathedral</span>
+                </div>
+                <p className="text-sm text-gray-600 mt-4">Please arrive by 12:00 PM</p>
               </div>
-              <div className="space-y-8 animate-fade-editorial">
-                <div>
-                  <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">How We Met</h3>
-                  <p className="text-gray-700 leading-relaxed font-cormorant text-lg">
-                    It all began at the Parish of Maria Regina, not inside the church, but in the quiet familiarity of
-                    the parish home, where Diana's late cousin was serving as a priest (Rest in Peace Fr. Muhau). That
-                    is where Victor and Diana first crossed paths. There were no grand declarations or instant sparks,
-                    just two people meeting under ordinary circumstances, unaware that life had something in store for
-                    them.
-                  </p>
+            </div>
+
+            {/* Reception Details */}
+            <div className="card-editorial p-8 text-center bg-white">
+              <Heart className="w-12 h-12 text-amber-600 mx-auto mb-4" />
+              <h3 className="text-2xl font-editorial text-amber-900 mb-4 tracking-wide">Reception</h3>
+              <div className="space-y-3 text-gray-700 font-cormorant text-lg">
+                <div className="flex items-center justify-center gap-2">
+                  <Clock className="w-5 h-5 text-amber-600" />
+                  <span>4:00 PM - Midnight</span>
                 </div>
-                <div>
-                  <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">From Friends to Forever</h3>
-                  <p className="text-gray-700 leading-relaxed font-cormorant text-lg">
-                    In the years that followed, they became friends. The kind of friends who laugh easily, talk often,
-                    and genuinely enjoy each other's company. Their friendship was patient and steady, growing quietly
-                    in the background of their busy lives. But time has a way of revealing what is meant to be. What
-                    started as friendship slowly deepened into something more.
-                  </p>
+                <div className="flex items-center justify-center gap-2">
+                  <MapPin className="w-5 h-5 text-amber-600" />
+                  <span>De Harte Wedding Venue</span>
                 </div>
-                <div>
-                  <h3 className="text-3xl font-editorial text-amber-900 mb-4 tracking-wide">The Puppy That Stole Hearts</h3>
+                <p className="text-sm text-gray-600 mt-4">Cocktails & Canapés at 4:00 PM<br/>Formal reception at 5:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Bible Verse */}
+          <div className="card-editorial p-12 text-center bg-white mt-12 max-w-4xl mx-auto">
+            <div className="mb-6">
+              <Heart className="w-12 h-12 text-amber-600 mx-auto" />
+            </div>
+            <blockquote className="text-2xl font-cormorant text-amber-900 italic leading-relaxed mb-6">
+              "And so we know and rely on the love God has for us. God is love. Whoever lives in love lives in God, and God in them."
+            </blockquote>
+            <div className="w-24 h-px bg-amber-600 mx-auto mb-4"></div>
+            <p className="text-amber-600 font-editorial tracking-wider uppercase text-sm">1 John 4:16</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Story - Collapsible Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <button
+            onClick={() => setIsStoryExpanded(!isStoryExpanded)}
+            className="w-full flex items-center justify-between p-6 bg-amber-50 hover:bg-amber-100 transition-colors duration-300 border border-amber-200"
+          >
+            <h2 className="text-3xl font-editorial text-amber-900 tracking-wide">Our Story</h2>
+            {isStoryExpanded ? (
+              <ChevronUp className="w-8 h-8 text-amber-600" />
+            ) : (
+              <ChevronDown className="w-8 h-8 text-amber-600" />
+            )}
+          </button>
+          
+          {isStoryExpanded && (
+            <div className="p-8 bg-white border border-amber-200 border-t-0 animate-fade-editorial">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="animate-slide-editorial">
+                  <Image
+                    src="/page1.jpg"
+                    alt="Diana and Victor"
+                    width={600}
+                    height={800}
+                    className="w-full h-auto shadow-lg"
+                  />
+                </div>
+                <div className="space-y-6">
                   <p className="text-gray-700 leading-relaxed font-cormorant text-lg">
-                    And then, there was the puppy. Victor, knowing Diana's love for dogs, surprised her with a
-                    mischievous little one. That pup brought chaos and laughter into the house and quickly became a
-                    beloved member of the family. Just like Victor did. Their story has always been about love built on
-                    friendship, understanding, and shared joy.
+                    It all began at the Parish of Maria Regina, where Diana's late cousin was serving as a priest (Rest in Peace Fr. Muhau). 
+                    That is where Victor and Diana first crossed paths. There were no grand declarations or instant sparks, just two people 
+                    meeting under ordinary circumstances, unaware that life had something in store for them. In the years that followed, they 
+                    became friends - the kind who laugh easily, talk often, and genuinely enjoy each other's company. Their friendship was 
+                    patient and steady, growing quietly in the background of their busy lives. But time has a way of revealing what is meant 
+                    to be. What started as friendship slowly deepened into something more. And then, there was the puppy. Victor, knowing 
+                    Diana's love for dogs, surprised her with a mischievous little one. That pup brought chaos and laughter into the house 
+                    and quickly became a beloved member of the family. Just like Victor did. Their story has always been about love built 
+                    on friendship, understanding, and shared joy.
                   </p>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
 
@@ -125,6 +178,8 @@ export default function HomePage() {
       <div className="editorial-divider">
         <span>Cherished Moments</span>
       </div>
+
+
 
       {/* Beautiful Moments Gallery */}
       <section className="py-24 bg-amber-50">
@@ -184,11 +239,10 @@ export default function HomePage() {
                   <Heart className="w-12 h-12 text-amber-600 mx-auto" />
                 </div>
                 <blockquote className="text-2xl font-cormorant text-amber-900 italic leading-relaxed mb-6">
-                  "Love is not about how many days, months, or years you have been together. 
-                  It's about how much you love each other every single day."
+                  "And so we know and rely on the love God has for us. God is love. Whoever lives in love lives in God, and God in them."
                 </blockquote>
                 <div className="w-24 h-px bg-amber-600 mx-auto mb-4"></div>
-                <p className="text-amber-600 font-editorial tracking-wider uppercase text-sm">Diana & Victor</p>
+                <p className="text-amber-600 font-editorial tracking-wider uppercase text-sm">1 John 4:16</p>
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ export function Navigation() {
     { href: "/gift-registry", label: "Registry" },
     { href: "/accommodation", label: "Stay" },
     { href: "/dress-code", label: "Attire" },
-    { href: "/faq", label: "FAQ" },
+    { href: "/faq", label: "Helpful Information" },
   ]
 
   const isActive = (href: string) => {

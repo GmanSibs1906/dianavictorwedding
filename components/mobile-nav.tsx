@@ -16,7 +16,7 @@ export function MobileNav() {
     { href: "/gift-registry", label: "Gift Registry" },
     { href: "/accommodation", label: "Accommodation" },
     { href: "/dress-code", label: "Dress Code" },
-    { href: "/faq", label: "FAQ" },
+    { href: "/faq", label: "Helpful Information" },
   ]
 
   const isActive = (href: string) => {
@@ -51,8 +51,8 @@ export function MobileNav() {
             <span className="sr-only">Toggle menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-          <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white">
+        <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
           <div className="flex flex-col space-y-4 mt-8">
             <div className="text-2xl font-serif text-amber-900 mb-8 text-center">Diana & Victor</div>
             {navItems.map((item) => (

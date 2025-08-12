@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent } from "@/components/ui/card"
-import { HelpCircle, Clock, MapPin, Phone, Mail, Car, Utensils, Music, Camera, Gift, Heart } from "lucide-react"
+import { HelpCircle, Clock, MapPin, Phone, Mail, Car, Utensils, Music, Camera, Gift, Heart, Shirt } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import Image from "next/image"
 
@@ -16,7 +16,7 @@ export default function FAQPage() {
         <div className="magazine-grid container mx-auto px-6">
           <div className="magazine-content text-center">
             <HelpCircle className="w-16 h-16 text-amber-600 mx-auto mb-8" />
-            <h1 className="text-6xl md:text-8xl font-editorial text-amber-900 mb-8 tracking-wide">FAQ</h1>
+            <h1 className="text-5xl md:text-7xl font-editorial text-amber-900 mb-8 tracking-wide">Helpful Information</h1>
             <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto font-cormorant">
               Everything you need to know about our special day. If you have additional questions,
               please don't hesitate to reach out to us directly.
@@ -63,6 +63,19 @@ export default function FAQPage() {
                 <AccordionItem value="item-3" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
                     <div className="flex items-center gap-3">
+                      <Shirt className="w-5 h-5 text-amber-600" />
+                      What is the dress code for the wedding?
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
+                    The dress code is formal/black tie. We recommend elegant attire in shades of green and tan. 
+                    Please avoid white, ivory, or cream colors. Your presence is the most important thing to us, so please dress in a way that makes you feel comfortable and confident.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4" className="border-amber-200">
+                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
+                    <div className="flex items-center gap-3">
                       <MapPin className="w-5 h-5 text-amber-600" />
                       Is there parking available at both venues?
                     </div>
@@ -72,7 +85,7 @@ export default function FAQPage() {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-4" className="border-amber-200">
+                <AccordionItem value="item-5" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
                     <div className="flex items-center gap-3">
                       <Car className="w-5 h-5 text-amber-600" />
@@ -85,7 +98,7 @@ export default function FAQPage() {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-5" className="border-amber-200">
+                <AccordionItem value="item-6" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
                     <div className="flex items-center gap-3">
                       <Utensils className="w-5 h-5 text-amber-600" />
@@ -97,17 +110,67 @@ export default function FAQPage() {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-6" className="border-amber-200">
+                <AccordionItem value="item-7" className="border-amber-200">
                   <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
                     <div className="flex items-center gap-3">
-                      <Music className="w-5 h-5 text-amber-600" />
-                      Will there be music and dancing?
+                      <Gift className="w-5 h-5 text-amber-600" />
+                      What about wedding gifts?
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    Yes! We'll have a DJ playing a mix of contemporary hits, classic favorites, and traditional
-                    South African music. The dance floor will be open after dinner, and we encourage everyone
-                    to join us for dancing and celebration.
+                    We have a gift registry and also welcome cash contributions. Your presence at our wedding is truly the greatest gift we could ask for, but any additional gifts you choose to give will be treasured as we build our life together.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-8" className="border-amber-200">
+                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
+                    <div className="flex items-center gap-3">
+                      <Clock className="w-5 h-5 text-amber-600" />
+                      What time will the reception end?
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
+                    The reception will conclude promptly at midnight.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-9" className="border-amber-200">
+                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
+                    <div className="flex items-center gap-3">
+                      <Utensils className="w-5 h-5 text-amber-600" />
+                      What to expect at the bar?
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
+                    A bar will be available, offering complimentary soft drinks, juices, beer, and wines. Hard liquor will be available for purchase.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-10" className="border-amber-200">
+                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
+                    <div className="flex items-center gap-3">
+                      <Heart className="w-5 h-5 text-amber-600" />
+                      Are children welcome at the wedding?
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
+                    Yes, children are welcome at both the ceremony and reception! We ask that parents ensure
+                    their little ones are supervised during the ceremony. The reception venue has some space
+                    where children can play if needed.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-11" className="border-amber-200">
+                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
+                    <div className="flex items-center gap-3">
+                      <Phone className="w-5 h-5 text-amber-600" />
+                      What if I need to contact someone on the wedding day?
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
+                    Our wedding coordinator, Juanita Beukes, will be available throughout the day for any
+                    questions or concerns. You can reach her at +27 79 246 8279. For any last-minute changes
+                    or emergencies, this is your best contact number.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -200,99 +263,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      {/* Editorial Divider */}
-      <div className="editorial-divider">
-        <span>More Questions & Answers</span>
-      </div>
 
-      {/* FAQ Section - Part 2 */}
-      <section className="py-24 bg-white">
-        <div className="magazine-grid container mx-auto px-6">
-          <div className="magazine-content">
-            <div className="card-editorial p-12">
-              <Accordion type="single" collapsible className="w-full space-y-6">
-                <AccordionItem value="item-7" className="border-amber-200">
-                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
-                    <div className="flex items-center gap-3">
-                      <Camera className="w-5 h-5 text-amber-600" />
-                      Can I take photos during the ceremony?
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    We kindly ask that you put away cameras and phones during the ceremony to allow our professional
-                    photographer to capture the moments. Feel free to take photos during the cocktail hour and
-                    reception! We'll share professional photos with everyone after the wedding.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-8" className="border-amber-200">
-                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
-                    <div className="flex items-center gap-3">
-                      <Gift className="w-5 h-5 text-amber-600" />
-                      Where should I bring wedding gifts?
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    We have established a gift registry, and cash contributions are also welcome. You can bring gifts to the reception venue where we'll have a designated gift table, or you can send gifts to our home address (listed on our gift registry page).
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-9" className="border-amber-200">
-                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
-                    <div className="flex items-center gap-3">
-                      <Clock className="w-5 h-5 text-amber-600" />
-                      What time will the reception end?
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    The reception will conclude promptly at midnight.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-10" className="border-amber-200">
-                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
-                    <div className="flex items-center gap-3">
-                      <Utensils className="w-5 h-5 text-amber-600" />
-                      What to expect at the bar?
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    A bar will be available, offering complimentary soft drinks, juices, beer, and wines. Hard liquor will be available for purchase.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-11" className="border-amber-200">
-                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
-                    <div className="flex items-center gap-3">
-                      <Heart className="w-5 h-5 text-amber-600" />
-                      Are children welcome at the wedding?
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    Yes, children are welcome at both the ceremony and reception! We ask that parents ensure
-                    their little ones are supervised during the ceremony. The reception venue has some space
-                    where children can play if needed.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-12" className="border-amber-200">
-                  <AccordionTrigger className="text-left font-cormorant text-lg font-semibold text-amber-900 uppercase tracking-wider hover:text-amber-600">
-                    <div className="flex items-center gap-3">
-                      <Phone className="w-5 h-5 text-amber-600" />
-                      What if I need to contact someone on the wedding day?
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-700 font-cormorant text-lg pt-4 pl-8">
-                    Our wedding coordinator, Juanita Beukes, will be available throughout the day for any
-                    questions or concerns. You can reach her at +27 79 246 8279. For any last-minute changes
-                    or emergencies, this is your best contact number.
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Editorial Divider */}
       <div className="editorial-divider">

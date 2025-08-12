@@ -183,73 +183,7 @@ export default function AccommodationPage() {
               </div>
             </div>
 
-            {/* Sheraton Pretoria Hotel */}
-            <div className="card-editorial overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-80 md:h-auto">
-                  <Image
-                    src="https://img.easemytrip.com/EMTHotel-49952/72/a/l/1129104/114077995_P.jpg"
-                    alt="Sheraton Pretoria Hotel"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-12">
-                  <div className="mb-6">
-                    <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-3xl font-editorial text-amber-900 tracking-wide">Sheraton Pretoria</h3>
-                      <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-5 h-5 fill-amber-600 text-amber-600" />
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-amber-600 font-cormorant text-lg font-semibold uppercase tracking-wider">5-Star Luxury • 2km from ceremony venue</p>
-                  </div>
-                  <div className="space-y-6">
-                    <p className="text-gray-700 font-cormorant text-lg leading-relaxed">
-                      Elegant luxury hotel in the heart of Pretoria offering world-class amenities and exceptional service for discerning guests.
-                    </p>
-                    <div className="flex flex-wrap gap-6 text-sm text-gray-600 font-cormorant">
-                      <div className="flex items-center gap-2">
-                        <Wifi className="w-4 h-4" />
-                        <span>Free WiFi</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Car className="w-4 h-4" />
-                        <span>Valet Parking</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Coffee className="w-4 h-4" />
-                        <span>Spa & Pool</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Utensils className="w-4 h-4" />
-                        <span>Fine Dining</span>
-                      </div>
-                    </div>
-                    <div className="space-y-3">
-                      <p className="font-semibold text-amber-900 font-cormorant text-lg">Special Wedding Rate: R2,800/night</p>
-                      <p className="text-sm text-gray-600 font-cormorant">Quote "Diana & Victor Wedding" when booking</p>
-                    </div>
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <Button asChild className="amber-button">
-                        <Link href="tel:+27123456789">
-                          <Phone className="w-4 h-4 mr-2" />
-                          Call to Book
-                        </Link>
-                      </Button>
-                      <Button asChild className="amber-button-outline">
-                        <Link href="mailto:reservations@sheraton-pretoria.com">
-                          <Mail className="w-4 h-4 mr-2" />
-                          Email Hotel
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>

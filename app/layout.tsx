@@ -9,7 +9,7 @@ const bodoni = Bodoni_Moda({ subsets: ["latin"], variable: "--font-bodoni" })
 const cormorant = Cormorant_Garamond({ subsets: ["latin"], variable: "--font-cormorant", weight: ["300", "400", "500", "600", "700"] })
 
 export const metadata: Metadata = {
-  title: "Diana & Victor - An Editorial Wedding",
+  title: "Diana & Victor - Wedding Celebration",
   description: "A sophisticated celebration of love and elegance",
     generator: 'v0.dev'
 }
