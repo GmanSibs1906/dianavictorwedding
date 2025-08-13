@@ -65,12 +65,12 @@ export default function DressCodePage() {
 
                 <div className="border-t border-amber-200 pt-8">
                   <h4 className="text-2xl font-editorial text-amber-800 mb-4 tracking-wide">Please Kindly Avoid</h4>
-                  <p className="text-xl text-gray-700 font-cormorant">White, ivory, or cream (reserved for the bride)</p>
+                  <p className="text-xl text-gray-700 font-cormorant">White, ivory, or cream </p>
                 </div>
 
                 <div className="border-t border-amber-200 pt-8">
                   <p className="text-xl text-gray-700 font-cormorant leading-relaxed italic">
-                    While our wedding colors are green, this is absolutely not a requirement. Please wear whatever makes you feel happy and confident!
+                    While our wedding colors are shades of green and tan, this is absolutely not a requirement. Please wear whatever makes you feel happy and confident!
                   </p>
                 </div>
               </div>

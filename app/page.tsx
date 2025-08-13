@@ -82,8 +82,12 @@ export default function HomePage() {
             {/* Ceremony Details */}
             <div className="card-editorial p-8 text-center bg-white">
               <Church className="w-12 h-12 text-amber-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-editorial text-amber-900 mb-4 tracking-wide">Ceremony</h3>
+              <h3 className="text-2xl font-editorial text-amber-900 mb-4 tracking-wide">Holy Ceremony</h3>
               <div className="space-y-3 text-gray-700 font-cormorant text-lg">
+                <div className="flex items-center justify-center gap-2">
+                  <Clock className="w-5 h-5 text-amber-600" />
+                  <span>Thursday, December 4th, 2025</span>
+                </div>
                 <div className="flex items-center justify-center gap-2">
                   <Clock className="w-5 h-5 text-amber-600" />
                   <span>12:00 PM</span>
@@ -92,24 +96,54 @@ export default function HomePage() {
                   <MapPin className="w-5 h-5 text-amber-600" />
                   <span>Sacred Heart Cathedral</span>
                 </div>
-                <p className="text-sm text-gray-600 mt-4">Please arrive by 12:00 PM</p>
+                <p className="text-sm text-gray-600 mt-2">
+                  Cnr Bok Street<br/>
+                  Pretoria Central, Pretoria, 0001
+                </p>
+                <a 
+                  href="https://maps.google.com/?q=Sacred+Heart+Cathedral+Pretoria" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 px-6 py-2 bg-amber-600 text-white rounded-full hover:bg-amber-700 transition-colors font-cormorant"
+                >
+                  View on Google Maps
+                </a>
               </div>
             </div>
 
             {/* Reception Details */}
             <div className="card-editorial p-8 text-center bg-white">
               <Heart className="w-12 h-12 text-amber-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-editorial text-amber-900 mb-4 tracking-wide">Reception</h3>
+              <h3 className="text-2xl font-editorial text-amber-900 mb-4 tracking-wide">Reception Celebration</h3>
               <div className="space-y-3 text-gray-700 font-cormorant text-lg">
                 <div className="flex items-center justify-center gap-2">
                   <Clock className="w-5 h-5 text-amber-600" />
-                  <span>4:00 PM - Midnight</span>
+                  <span>Thursday, December 4th, 2025</span>
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <Clock className="w-5 h-5 text-amber-600" />
+                  <span>Cocktail Hour Starts at 4:00pm</span>
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <Clock className="w-5 h-5 text-amber-600" />
+                  <span>Reception Starts at 5:00pm</span>
                 </div>
                 <div className="flex items-center justify-center gap-2">
                   <MapPin className="w-5 h-5 text-amber-600" />
                   <span>De Harte Wedding Venue</span>
                 </div>
-                <p className="text-sm text-gray-600 mt-4">Cocktails & Canapés at 4:00 PM<br/>Formal reception at 5:00 PM</p>
+                <p className="text-sm text-gray-600 mt-2">
+                  66 Botha Street<br/>
+                  Onderstepoort, Pretoria, 0110
+                </p>
+                <a 
+                  href="https://maps.google.com/?q=De+Harte+Wedding+Venue+Onderstepoort+Pretoria" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 px-6 py-2 bg-amber-600 text-white rounded-full hover:bg-amber-700 transition-colors font-cormorant"
+                >
+                  View on Google Maps
+                </a>
               </div>
             </div>
           </div>
@@ -156,17 +190,46 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="space-y-6">
-                  <p className="text-gray-700 leading-relaxed font-cormorant text-lg">
-                    It all began at the Parish of Maria Regina, where Diana's late cousin was serving as a priest (Rest in Peace Fr. Muhau). 
-                    That is where Victor and Diana first crossed paths. There were no grand declarations or instant sparks, just two people 
-                    meeting under ordinary circumstances, unaware that life had something in store for them. In the years that followed, they 
-                    became friends - the kind who laugh easily, talk often, and genuinely enjoy each other's company. Their friendship was 
-                    patient and steady, growing quietly in the background of their busy lives. But time has a way of revealing what is meant 
-                    to be. What started as friendship slowly deepened into something more. And then, there was the puppy. Victor, knowing 
-                    Diana's love for dogs, surprised her with a mischievous little one. That pup brought chaos and laughter into the house 
-                    and quickly became a beloved member of the family. Just like Victor did. Their story has always been about love built 
-                    on friendship, understanding, and shared joy.
-                  </p>
+                  <div className="text-gray-700 leading-relaxed font-cormorant text-lg space-y-4">
+                    <p>
+                      It began at the Parish of Maria Regina,<br />
+                      not within the church walls,<br />
+                      but in the gentle quiet of the Parish home,<br />
+                      where Diana's late cousin, Fr. Muhau (rest in peace),<br />
+                      served with kindness and grace.<br />
+                      There, Victor and Diana first met,<br />
+                      two souls crossing paths<br />
+                      under ordinary skies,<br />
+                      unaware of the love that time would weave.
+                    </p>
+                    
+                    <p>
+                      Friendship came first,<br />
+                      patient, steady,<br />
+                      filled with easy laughter and long conversations,<br />
+                      growing quietly in the backdrop of busy days.<br />
+                      Then, slowly, it changed.<br />
+                      What was friendship turned into something deeper,<br />
+                      something lasting.
+                    </p>
+                    
+                    <p>
+                      And then came the puppy,<br />
+                      a thoughtful gift from Victor to Diana,<br />
+                      knowing her deep love for animals.<br />
+                      A mischievous little heartbeat,<br />
+                      bringing chaos, warmth,<br />
+                      and joy that wove their hearts closer,<br />
+                      while gently testing the limits of their patience.
+                    </p>
+                    
+                    <p className="italic text-amber-800">
+                      Theirs is a love built on friendship,<br />
+                      rooted in understanding,<br />
+                      and blooming with shared joy.<br />
+                      A love that was always meant to be.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -233,7 +296,7 @@ export default function HomePage() {
             </div>
 
             {/* Elegant Quote Section */}
-            <div className="card-editorial p-12 text-center bg-gradient-to-r from-amber-50 to-white border-2 border-amber-200">
+            {/* <div className="card-editorial p-12 text-center bg-gradient-to-r from-amber-50 to-white border-2 border-amber-200">
               <div className="max-w-3xl mx-auto">
                 <div className="mb-6">
                   <Heart className="w-12 h-12 text-amber-600 mx-auto" />
@@ -244,7 +307,7 @@ export default function HomePage() {
                 <div className="w-24 h-px bg-amber-600 mx-auto mb-4"></div>
                 <p className="text-amber-600 font-editorial tracking-wider uppercase text-sm">1 John 4:16</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -358,9 +421,9 @@ export default function HomePage() {
                 <Users className="w-12 h-12 text-amber-600 mx-auto mb-6 group-hover:scale-110 transition-transform" />
                 <span className="font-cormorant text-lg text-amber-900 uppercase tracking-wider">Dress Code</span>
               </Link>
-              <Link href="/faq" className="card-editorial p-8 text-center group hover:bg-amber-50 transition-all duration-300">
+              <Link href="/faq" className="card-editorial py-8 text-center group hover:bg-amber-50 transition-all duration-300">
                 <HelpCircle className="w-12 h-12 text-amber-600 mx-auto mb-6 group-hover:scale-110 transition-transform" />
-                <span className="font-cormorant text-lg text-amber-900 uppercase tracking-wider">FAQ</span>
+                <span className="font-cormorant text-lg text-amber-900 uppercase tracking-wider">Helpful Information</span>
               </Link>
               <Link href="/gift-registry" className="card-editorial p-8 text-center group hover:bg-amber-50 transition-all duration-300">
                 <Gift className="w-12 h-12 text-amber-600 mx-auto mb-6 group-hover:scale-110 transition-transform" />
