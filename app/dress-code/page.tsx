@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Crown, Palette, Info } from "lucide-react"
 import { Navigation } from "@/components/navigation"
+import { ColorWheel } from "@/components/ui/color-wheel"
 
 export default function DressCodePage() {
   return (
@@ -69,9 +70,18 @@ export default function DressCodePage() {
                 </div>
 
                 <div className="border-t border-amber-200 pt-8">
-                  <p className="text-xl text-gray-700 font-cormorant leading-relaxed italic">
+                  {/* <p className="text-xl text-gray-700 font-cormorant leading-relaxed italic mb-8">
                     While our wedding colors are shades of green and tan, this is absolutely not a requirement. Please wear whatever makes you feel happy and confident!
-                  </p>
+                  </p> */}
+                  
+                  {/* Color Wheel */}
+                  <div className="mt-12">
+                    <h4 className="text-2xl font-editorial text-amber-800 mb-8 tracking-wide text-center">Color Inspiration</h4>
+                    <ColorWheel />
+                    <p className="text-center text-gray-600 font-cormorant mt-6 italic">
+                      Hover over each color to see the name and shade
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

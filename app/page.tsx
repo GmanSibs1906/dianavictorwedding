@@ -97,7 +97,7 @@ export default function HomePage() {
                   <span>Sacred Heart Cathedral</span>
                 </div>
                 <p className="text-sm text-gray-600 mt-2">
-                  Cnr Bok Street<br/>
+                  Nana Sita Street<br/>
                   Pretoria Central, Pretoria, 0001
                 </p>
                 <a 
@@ -133,7 +133,7 @@ export default function HomePage() {
                   <span>De Harte Wedding Venue</span>
                 </div>
                 <p className="text-sm text-gray-600 mt-2">
-                  66 Botha Street<br/>
+                  206 Rentia Street<br/>
                   Onderstepoort, Pretoria, 0110
                 </p>
                 <a 
@@ -177,8 +177,73 @@ export default function HomePage() {
             )}
           </button>
           
+          {/* Mobile Layout - Image always visible, text collapsible */}
+          <div className="md:hidden">
+            {/* Image always shown on mobile */}
+            <div className="p-8 bg-white border border-amber-200 border-t-0">
+              <div className="animate-slide-editorial">
+                <Image
+                  src="/page1.jpg"
+                  alt="Diana and Victor"
+                  width={600}
+                  height={800}
+                  className="w-full h-auto shadow-lg"
+                />
+              </div>
+            </div>
+            
+            {/* Text content - collapsible on mobile */}
+            {isStoryExpanded && (
+              <div className="p-8 bg-white border border-amber-200 border-t-0 animate-fade-editorial">
+                <div className="space-y-6">
+                  <div className="text-gray-700 leading-relaxed font-cormorant text-lg space-y-4">
+                    <p>
+                      It began at the Parish of Maria Regina,<br />
+                      not within the church walls,<br />
+                      but in the gentle quiet of the Parish home,<br />
+                      where Diana's late cousin, Fr. Muhau (rest in peace),<br />
+                      served with kindness and grace.<br />
+                      There, Victor and Diana first met,<br />
+                      two souls crossing paths<br />
+                      under ordinary skies,<br />
+                      unaware of the love that time would weave.
+                    </p>
+                    
+                    <p>
+                      Friendship came first,<br />
+                      patient, steady,<br />
+                      filled with easy laughter and long conversations,<br />
+                      growing quietly in the backdrop of busy days.<br />
+                      Then, slowly, it changed.<br />
+                      What was friendship turned into something deeper,<br />
+                      something lasting.
+                    </p>
+                    
+                    <p>
+                      And then came the puppy,<br />
+                      a thoughtful gift from Victor to Diana,<br />
+                      knowing her deep love for animals.<br />
+                      A mischievous little heartbeat,<br />
+                      bringing chaos, warmth,<br />
+                      and joy that wove their hearts closer,<br />
+                      while gently testing the limits of their patience.
+                    </p>
+                    
+                    <p className="italic text-amber-800">
+                      Theirs is a love built on friendship,<br />
+                      rooted in understanding,<br />
+                      and blooming with shared joy.<br />
+                      A love that was always meant to be.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Desktop Layout - Original behavior */}
           {isStoryExpanded && (
-            <div className="p-8 bg-white border border-amber-200 border-t-0 animate-fade-editorial">
+            <div className="hidden md:block p-8 bg-white border border-amber-200 border-t-0 animate-fade-editorial">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="animate-slide-editorial">
                   <Image
